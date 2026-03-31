@@ -2,11 +2,12 @@
   "name": "study",
   "version": "1.0.0",
   "description": "",
+  "type": "module",
   "main": "index.js",
   "scripts": {
-    "build": "tsc",
-    "start": "node dist/server.js",
-    "dev": "ts-node src/server.ts"
+    "dev": "concurrently \"tsx src/server.ts\" \"cd client && npm run dev\"",
+    "build": "tsc && cd client && npm run build",
+    "start": "node dist/server.js"
   },
   "keywords": [],
   "author": "",
@@ -17,7 +18,8 @@
   "devDependencies": {
     "@types/express": "^5.0.6",
     "@types/node": "^25.5.0",
-    "ts-node": "^10.9.2",
+    "concurrently": "^9.2.1",
+    "tsx": "^4.21.0",
     "typescript": "^6.0.2"
   }
 }

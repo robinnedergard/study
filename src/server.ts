@@ -1,11 +1,16 @@
 import express from "express";
-import path from "path";
-import { acronyms } from "./acronyms";
+import path from "node:path";
+import { fileURLToPath } from "node:url";
+import { acronyms } from "./acronyms.js";
+
+const __filename = fileURLToPath(import.meta.url);
+const __dirname = path.dirname(__filename);
 
 const app = express();
 const PORT = 3000;
 
-app.use(express.static(path.join(__dirname, "../public")));
+// Serve React build in production
+app.use(express.static(path.join(__dirname, "../client/dist")));
 
 app.get("/api/quiz", (req, res) => {
   const count = Math.min(Number(req.query.count) || 20, acronyms.length);
@@ -38,6 +43,11 @@ app.get("/api/quiz", (req, res) => {
 app.get("/api/categories", (_req, res) => {
   const categories = [...new Set(acronyms.map((a) => a.category))].sort();
   res.json(categories);
+});
+
+// SPA fallback for React Router (Express 5 syntax)
+app.get("/{*splat}", (_req, res) => {
+  res.sendFile(path.join(__dirname, "../client/dist/index.html"));
 });
 
 app.listen(PORT, () => {

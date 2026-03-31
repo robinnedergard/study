@@ -2,13 +2,17 @@
   "compilerOptions": {
     "rootDir": "src",
     "outDir": "dist",
-    "module": "commonjs",
-    "target": "es2020",
+    "module": "nodenext",
+    "moduleResolution": "nodenext",
+    "target": "es2022",
     "types": ["node"],
     "sourceMap": true,
     "strict": true,
     "esModuleInterop": true,
     "skipLibCheck": true,
-    "resolveJsonModule": true
-  }
+    "resolveJsonModule": true,
+    "verbatimModuleSyntax": true
+  },
+  "include": ["src"],
+  "exclude": ["client"]
 }
