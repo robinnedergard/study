@@ -1,5 +1,6 @@
 import { useEffect, useState } from 'react'
 import { useNavigate } from 'react-router-dom'
+import { authFetch } from '../auth'
 import styles from './Home.module.css'
 
 export default function Home() {
@@ -9,7 +10,7 @@ export default function Home() {
   const navigate = useNavigate();
 
   useEffect(() => {
-    fetch('/api/categories')
+    authFetch('/api/categories')
       .then((r) => r.json())
       .then(setCategories);
   }, []);

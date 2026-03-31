@@ -1,6 +1,7 @@
 import { useEffect, useState } from 'react'
 import { useSearchParams, useNavigate } from 'react-router-dom'
 import type { Question, MissedQuestion } from '../types'
+import { authFetch } from '../auth'
 import QuestionCard from '../components/QuestionCard'
 
 export default function Quiz() {
@@ -16,7 +17,7 @@ export default function Quiz() {
   const category = searchParams.get('category') || 'all';
 
   useEffect(() => {
-    fetch(`/api/quiz?count=${count}&category=${encodeURIComponent(category)}`)
+    authFetch(`/api/quiz?count=${count}&category=${encodeURIComponent(category)}`)
       .then((r) => r.json())
       .then((data) => {
         setQuestions(data);

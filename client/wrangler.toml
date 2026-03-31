@@ -6,3 +6,5 @@ main = "worker/index.ts"
 directory = "./dist"
 binding = "ASSETS"
 not_found_handling = "single-page-application"
+
+# Set these as secrets via: npx wrangler secret put PASSCODE && npx wrangler secret put JWT_SECRET
