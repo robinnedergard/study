@@ -3,3 +3,5 @@ dist
 client/dist
 client/node_modules
 .wrangler
+.env
+.env.*
