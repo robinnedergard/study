@@ -38,7 +38,7 @@
 
 .prompt {
   background: #0f172a;
-  border-left: 3px solid #a78bfa;
+  border-left: 3px solid #38bdf8;
   border-radius: 0 8px 8px 0;
   padding: 1rem 1.2rem;
   margin-bottom: 1.5rem;
@@ -46,7 +46,7 @@
 
 .promptLabel {
   font-weight: 700;
-  color: #a78bfa;
+  color: #38bdf8;
   font-size: 0.75rem;
   text-transform: uppercase;
   letter-spacing: 0.05em;

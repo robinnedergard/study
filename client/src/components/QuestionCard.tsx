@@ -52,6 +52,10 @@ export default function QuestionCard({ question, current, total, onAnswer }: Pro
 
         {isAnswered && (
           <>
+            <button className={styles.nextBtn} onClick={() => onAnswer(isCorrect)}>
+              {current + 1 < total ? "Next" : "See Results"}
+            </button>
+
             <div
               className={`${styles.feedback} ${isCorrect ? styles.feedbackCorrect : styles.feedbackWrong}`}
             >
@@ -62,10 +66,6 @@ export default function QuestionCard({ question, current, total, onAnswer }: Pro
               <div className={styles.explanationLabel}>What is it?</div>
               <div>{question.explanation}</div>
             </div>
-
-            <button className={styles.nextBtn} onClick={() => onAnswer(isCorrect)}>
-              {current + 1 < total ? "Next" : "See Results"}
-            </button>
           </>
         )}
       </div>

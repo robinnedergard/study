@@ -61,6 +61,10 @@ export default function TermMatchCard({ question, current, total, onAnswer }: Pr
 
         {isAnswered && (
           <>
+            <button className={styles.nextBtn} onClick={() => onAnswer(isCorrect)}>
+              {current + 1 < total ? "Next" : "See Results"}
+            </button>
+
             <div
               className={`${styles.feedback} ${isCorrect ? styles.feedbackCorrect : styles.feedbackWrong}`}
             >
@@ -68,10 +72,6 @@ export default function TermMatchCard({ question, current, total, onAnswer }: Pr
                 ? "Correct!"
                 : `Wrong! The answer is: ${question.correctAcronym} — ${question.correctMeaning}`}
             </div>
-
-            <button className={styles.nextBtn} onClick={() => onAnswer(isCorrect)}>
-              {current + 1 < total ? "Next" : "See Results"}
-            </button>
           </>
         )}
       </div>

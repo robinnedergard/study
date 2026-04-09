@@ -1,7 +1,10 @@
-import { Outlet, Link } from "react-router-dom";
+import { Outlet, Link, useLocation } from "react-router-dom";
 import styles from "./Layout.module.css";
 
 export default function Layout() {
+  const { pathname } = useLocation();
+  const showBack = pathname !== "/" && pathname !== "/login";
+
   return (
     <>
       <header className={styles.header}>
@@ -11,6 +14,11 @@ export default function Layout() {
         </Link>
       </header>
       <div className={styles.container}>
+        {showBack && (
+          <Link to="/" className={styles.backBtn}>
+            &larr; Back to menu
+          </Link>
+        )}
         <Outlet />
       </div>
     </>
