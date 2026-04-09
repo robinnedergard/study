@@ -1,11 +1,11 @@
-import { useLocation, useNavigate, Navigate } from 'react-router-dom'
-import type { MissedQuestion } from '../types'
-import styles from './Results.module.css'
+import { useLocation, useNavigate, Navigate } from "react-router-dom";
+import type { MissedItem } from "../types";
+import styles from "./Results.module.css";
 
 interface ResultsState {
   correctCount: number;
   total: number;
-  missed: MissedQuestion[];
+  missed: MissedItem[];
 }
 
 export default function Results() {
@@ -17,7 +17,7 @@ export default function Results() {
 
   const { correctCount, total, missed } = state;
   const pct = Math.round((correctCount / total) * 100);
-  const grade = pct >= 80 ? 'great' : pct >= 60 ? 'ok' : 'bad';
+  const grade = pct >= 80 ? "great" : pct >= 60 ? "ok" : "bad";
 
   return (
     <div className={styles.card}>
@@ -30,11 +30,15 @@ export default function Results() {
 
       <div className={styles.stats}>
         <div className={styles.stat}>
-          <div className={styles.num} style={{ color: '#22c55e' }}>{correctCount}</div>
+          <div className={styles.num} style={{ color: "#22c55e" }}>
+            {correctCount}
+          </div>
           <div className={styles.statLabel}>Correct</div>
         </div>
         <div className={styles.stat}>
-          <div className={styles.num} style={{ color: '#ef4444' }}>{total - correctCount}</div>
+          <div className={styles.num} style={{ color: "#ef4444" }}>
+            {total - correctCount}
+          </div>
           <div className={styles.statLabel}>Wrong</div>
         </div>
         <div className={styles.stat}>
@@ -57,9 +61,9 @@ export default function Results() {
         <p className={styles.perfect}>Perfect score! Well done!</p>
       )}
 
-      <button className={styles.restartBtn} onClick={() => navigate('/')}>
+      <button className={styles.restartBtn} onClick={() => navigate("/")}>
         Try Again
       </button>
     </div>
-  )
+  );
 }

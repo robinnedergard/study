@@ -60,7 +60,7 @@ async function createJWT(secret: string): Promise<string> {
     new TextEncoder().encode(secret),
     { name: "HMAC", hash: "SHA-256" },
     false,
-    ["sign"]
+    ["sign"],
   );
 
   const signature = await crypto.subtle.sign("HMAC", key, new TextEncoder().encode(unsigned));
@@ -91,20 +91,19 @@ async function verifyAuth(request: Request, env: Env): Promise<Response | null> 
     new TextEncoder().encode(env.JWT_SECRET),
     { name: "HMAC", hash: "SHA-256" },
     false,
-    ["verify"]
+    ["verify"],
   );
 
   // Decode signature
-  const sigBytes = Uint8Array.from(
-    atob(sig.replace(/-/g, "+").replace(/_/g, "/")),
-    (c) => c.charCodeAt(0)
+  const sigBytes = Uint8Array.from(atob(sig.replace(/-/g, "+").replace(/_/g, "/")), (c) =>
+    c.charCodeAt(0),
   );
 
   const valid = await crypto.subtle.verify(
     "HMAC",
     key,
     sigBytes,
-    new TextEncoder().encode(`${header}.${payload}`)
+    new TextEncoder().encode(`${header}.${payload}`),
   );
 
   if (!valid) {
@@ -125,14 +124,36 @@ async function verifyAuth(request: Request, env: Env): Promise<Response | null> 
 function handleQuiz(url: URL): Response {
   const count = Math.min(Number(url.searchParams.get("count")) || 20, acronyms.length);
   const category = url.searchParams.get("category") || undefined;
+  const mode = url.searchParams.get("mode") || "acronym";
 
   const pool =
-    category && category !== "all"
-      ? acronyms.filter((a) => a.category === category)
-      : acronyms;
+    category && category !== "all" ? acronyms.filter((a) => a.category === category) : acronyms;
 
   const shuffled = [...pool].sort(() => Math.random() - 0.5);
   const selected = shuffled.slice(0, count);
+
+  if (mode === "term-match") {
+    const questions = selected.map((correct) => {
+      const wrong = acronyms
+        .filter((a) => a.acronym !== correct.acronym)
+        .sort(() => Math.random() - 0.5)
+        .slice(0, 3);
+
+      const options = [correct, ...wrong]
+        .map((a) => ({ acronym: a.acronym, meaning: a.meaning }))
+        .sort(() => Math.random() - 0.5);
+
+      return {
+        explanation: correct.explanation,
+        category: correct.category,
+        correctAcronym: correct.acronym,
+        correctMeaning: correct.meaning,
+        options,
+      };
+    });
+
+    return Response.json(questions);
+  }
 
   const questions = selected.map((correct) => ({
     acronym: correct.acronym,

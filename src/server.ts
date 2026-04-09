@@ -28,7 +28,7 @@ function createJWT(): string {
     JSON.stringify({
       iat: Math.floor(Date.now() / 1000),
       exp: Math.floor(Date.now() / 1000) + 30 * 24 * 60 * 60,
-    })
+    }),
   );
   const sig = crypto
     .createHmac("sha256", JWT_SECRET)
@@ -53,11 +53,7 @@ function verifyJWT(token: string): boolean {
   return decoded.exp > Date.now() / 1000;
 }
 
-function requireAuth(
-  req: express.Request,
-  res: express.Response,
-  next: express.NextFunction
-) {
+function requireAuth(req: express.Request, res: express.Response, next: express.NextFunction) {
   const auth = req.headers.authorization;
   if (!auth?.startsWith("Bearer ") || !verifyJWT(auth.slice(7))) {
     res.status(401).json({ error: "Unauthorized" });
@@ -79,19 +75,40 @@ app.post("/api/login", (req, res) => {
 app.get("/api/quiz", requireAuth, (req, res) => {
   const count = Math.min(Number(req.query.count) || 20, acronyms.length);
   const category = req.query.category as string | undefined;
+  const mode = (req.query.mode as string) || "acronym";
 
   const pool =
-    category && category !== "all"
-      ? acronyms.filter((a) => a.category === category)
-      : acronyms;
+    category && category !== "all" ? acronyms.filter((a) => a.category === category) : acronyms;
 
   const shuffled = [...pool].sort(() => Math.random() - 0.5);
   const selected = shuffled.slice(0, count);
 
+  if (mode === "term-match") {
+    const questions = selected.map((correct) => {
+      const wrong = acronyms
+        .filter((a) => a.acronym !== correct.acronym)
+        .sort(() => Math.random() - 0.5)
+        .slice(0, 3);
+
+      const options = [correct, ...wrong]
+        .map((a) => ({ acronym: a.acronym, meaning: a.meaning }))
+        .sort(() => Math.random() - 0.5);
+
+      return {
+        explanation: correct.explanation,
+        category: correct.category,
+        correctAcronym: correct.acronym,
+        correctMeaning: correct.meaning,
+        options,
+      };
+    });
+
+    res.json(questions);
+    return;
+  }
+
   const questions = selected.map((correct) => {
-    const options = [correct.meaning, ...correct.distractors].sort(
-      () => Math.random() - 0.5
-    );
+    const options = [correct.meaning, ...correct.distractors].sort(() => Math.random() - 0.5);
 
     return {
       acronym: correct.acronym,

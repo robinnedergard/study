@@ -11,7 +11,8 @@ export const acronyms: Acronym[] = [
   {
     acronym: "CIA",
     meaning: "Confidentiality, Integrity, Availability",
-    explanation: "The three core pillars of information security. Confidentiality ensures data is only accessible to authorized parties, integrity ensures data hasn't been tampered with, and availability ensures systems and data are accessible when needed.",
+    explanation:
+      "The three core pillars of information security. Confidentiality ensures data is only accessible to authorized parties, integrity ensures data hasn't been tampered with, and availability ensures systems and data are accessible when needed.",
     category: "General Security Concepts",
     distractors: [
       "Cryptographic Identity Assurance",
@@ -22,7 +23,8 @@ export const acronyms: Acronym[] = [
   {
     acronym: "AAA",
     meaning: "Authentication, Authorization, and Accounting",
-    explanation: "A security framework that controls access to resources. Authentication verifies who you are, authorization determines what you can do, and accounting tracks what you did.",
+    explanation:
+      "A security framework that controls access to resources. Authentication verifies who you are, authorization determines what you can do, and accounting tracks what you did.",
     category: "General Security Concepts",
     distractors: [
       "Access, Auditing, and Administration",
@@ -33,7 +35,8 @@ export const acronyms: Acronym[] = [
   {
     acronym: "ACL",
     meaning: "Access Control List",
-    explanation: "A list of rules that specifies which users or systems are granted or denied access to a particular resource. Commonly used in firewalls, routers, and file systems to filter traffic or control permissions.",
+    explanation:
+      "A list of rules that specifies which users or systems are granted or denied access to a particular resource. Commonly used in firewalls, routers, and file systems to filter traffic or control permissions.",
     category: "General Security Concepts",
     distractors: [
       "Authorized Credential Lookup",
@@ -44,7 +47,8 @@ export const acronyms: Acronym[] = [
   {
     acronym: "DAC",
     meaning: "Discretionary Access Control",
-    explanation: "An access control model where the resource owner decides who can access their resources. Common in Windows and Linux file systems where the file creator sets permissions. Flexible but less secure than MAC.",
+    explanation:
+      "An access control model where the resource owner decides who can access their resources. Common in Windows and Linux file systems where the file creator sets permissions. Flexible but less secure than MAC.",
     category: "General Security Concepts",
     distractors: [
       "Dynamic Authentication Certificate",
@@ -55,7 +59,8 @@ export const acronyms: Acronym[] = [
   {
     acronym: "MAC",
     meaning: "Mandatory Access Control",
-    explanation: "An access control model where access is determined by security labels and clearance levels set by a central authority — not the resource owner. Used in military and government systems. More restrictive than DAC.",
+    explanation:
+      "An access control model where access is determined by security labels and clearance levels set by a central authority — not the resource owner. Used in military and government systems. More restrictive than DAC.",
     category: "General Security Concepts",
     distractors: [
       "Message Authentication Code",
@@ -66,7 +71,8 @@ export const acronyms: Acronym[] = [
   {
     acronym: "RBAC",
     meaning: "Role-Based Access Control",
-    explanation: "An access control model where permissions are assigned to roles (e.g. admin, manager, user) rather than to individual users. Users are then assigned roles. Simplifies management in large organizations.",
+    explanation:
+      "An access control model where permissions are assigned to roles (e.g. admin, manager, user) rather than to individual users. Users are then assigned roles. Simplifies management in large organizations.",
     category: "General Security Concepts",
     distractors: [
       "Rule-Based Authentication Configuration",
@@ -77,7 +83,8 @@ export const acronyms: Acronym[] = [
   {
     acronym: "ABAC",
     meaning: "Attribute-Based Access Control",
-    explanation: "An access control model that grants access based on attributes (user department, time of day, location, resource type, etc.) evaluated against policies. More granular and flexible than RBAC.",
+    explanation:
+      "An access control model that grants access based on attributes (user department, time of day, location, resource type, etc.) evaluated against policies. More granular and flexible than RBAC.",
     category: "General Security Concepts",
     distractors: [
       "Application-Based Authentication Certificate",
@@ -88,7 +95,8 @@ export const acronyms: Acronym[] = [
   {
     acronym: "MFA",
     meaning: "Multifactor Authentication",
-    explanation: "Requires two or more different authentication factors: something you know (password), something you have (token/phone), or something you are (biometrics). Significantly reduces the risk of compromised credentials.",
+    explanation:
+      "Requires two or more different authentication factors: something you know (password), something you have (token/phone), or something you are (biometrics). Significantly reduces the risk of compromised credentials.",
     category: "General Security Concepts",
     distractors: [
       "Managed Firewall Application",
@@ -99,7 +107,8 @@ export const acronyms: Acronym[] = [
   {
     acronym: "SSO",
     meaning: "Single Sign-On",
-    explanation: "Allows users to authenticate once and gain access to multiple applications or systems without re-entering credentials. Improves user experience but creates a single point of failure if the SSO provider is compromised.",
+    explanation:
+      "Allows users to authenticate once and gain access to multiple applications or systems without re-entering credentials. Improves user experience but creates a single point of failure if the SSO provider is compromised.",
     category: "General Security Concepts",
     distractors: [
       "Secure Session Origination",
@@ -110,7 +119,8 @@ export const acronyms: Acronym[] = [
   {
     acronym: "PAM",
     meaning: "Privileged Access Management",
-    explanation: "A set of tools and practices for securing, managing, and monitoring access to privileged accounts (admin, root, service accounts). Includes vaulting passwords, session recording, and just-in-time access.",
+    explanation:
+      "A set of tools and practices for securing, managing, and monitoring access to privileged accounts (admin, root, service accounts). Includes vaulting passwords, session recording, and just-in-time access.",
     category: "General Security Concepts",
     distractors: [
       "Policy Audit Mechanism",
@@ -121,7 +131,8 @@ export const acronyms: Acronym[] = [
   {
     acronym: "PKI",
     meaning: "Public Key Infrastructure",
-    explanation: "A framework of roles, policies, hardware, software, and procedures for creating, managing, distributing, and revoking digital certificates. Enables secure communication through asymmetric encryption and digital signatures.",
+    explanation:
+      "A framework of roles, policies, hardware, software, and procedures for creating, managing, distributing, and revoking digital certificates. Enables secure communication through asymmetric encryption and digital signatures.",
     category: "General Security Concepts",
     distractors: [
       "Private Key Issuance",
@@ -132,18 +143,16 @@ export const acronyms: Acronym[] = [
   {
     acronym: "CA",
     meaning: "Certificate Authority",
-    explanation: "A trusted entity that issues digital certificates, binding a public key to an identity. CAs verify the identity of certificate requestors and form the root of trust in PKI. Examples include DigiCert and Let's Encrypt.",
+    explanation:
+      "A trusted entity that issues digital certificates, binding a public key to an identity. CAs verify the identity of certificate requestors and form the root of trust in PKI. Examples include DigiCert and Let's Encrypt.",
     category: "General Security Concepts",
-    distractors: [
-      "Cryptographic Agent",
-      "Credential Attestation",
-      "Configuration Audit",
-    ],
+    distractors: ["Cryptographic Agent", "Credential Attestation", "Configuration Audit"],
   },
   {
     acronym: "CRL",
     meaning: "Certificate Revocation List",
-    explanation: "A list published by a CA containing serial numbers of certificates that have been revoked before their expiration date. Clients check the CRL to verify a certificate hasn't been revoked. Being replaced by OCSP in many cases.",
+    explanation:
+      "A list published by a CA containing serial numbers of certificates that have been revoked before their expiration date. Clients check the CRL to verify a certificate hasn't been revoked. Being replaced by OCSP in many cases.",
     category: "General Security Concepts",
     distractors: [
       "Cryptographic Root Ledger",
@@ -154,7 +163,8 @@ export const acronyms: Acronym[] = [
   {
     acronym: "OCSP",
     meaning: "Online Certificate Status Protocol",
-    explanation: "A real-time protocol for checking whether a specific certificate has been revoked, as an alternative to downloading entire CRLs. Faster and more efficient — the client sends a query and gets an immediate response about that one certificate.",
+    explanation:
+      "A real-time protocol for checking whether a specific certificate has been revoked, as an alternative to downloading entire CRLs. Faster and more efficient — the client sends a query and gets an immediate response about that one certificate.",
     category: "General Security Concepts",
     distractors: [
       "Open Credential Signing Platform",
@@ -165,7 +175,8 @@ export const acronyms: Acronym[] = [
   {
     acronym: "CSR",
     meaning: "Certificate Signing Request",
-    explanation: "A message sent to a Certificate Authority to request a digital certificate. It contains the public key and identifying information (domain, organization). The CA verifies the request and issues a signed certificate.",
+    explanation:
+      "A message sent to a Certificate Authority to request a digital certificate. It contains the public key and identifying information (domain, organization). The CA verifies the request and issues a signed certificate.",
     category: "General Security Concepts",
     distractors: [
       "Cryptographic Session Relay",
@@ -178,7 +189,8 @@ export const acronyms: Acronym[] = [
   {
     acronym: "AES",
     meaning: "Advanced Encryption Standard",
-    explanation: "A symmetric block cipher that replaced DES as the U.S. government standard. Uses 128, 192, or 256-bit keys. Fast, secure, and widely used for encrypting data at rest and in transit (TLS, VPNs, disk encryption).",
+    explanation:
+      "A symmetric block cipher that replaced DES as the U.S. government standard. Uses 128, 192, or 256-bit keys. Fast, secure, and widely used for encrypting data at rest and in transit (TLS, VPNs, disk encryption).",
     category: "Cryptography",
     distractors: [
       "Asymmetric Exchange System",
@@ -189,7 +201,8 @@ export const acronyms: Acronym[] = [
   {
     acronym: "DES",
     meaning: "Data Encryption Standard",
-    explanation: "An older symmetric block cipher using a 56-bit key. Once the U.S. government standard, it is now considered insecure due to its short key length being vulnerable to brute-force attacks. Replaced by AES.",
+    explanation:
+      "An older symmetric block cipher using a 56-bit key. Once the U.S. government standard, it is now considered insecure due to its short key length being vulnerable to brute-force attacks. Replaced by AES.",
     category: "Cryptography",
     distractors: [
       "Digital Entropy System",
@@ -200,7 +213,8 @@ export const acronyms: Acronym[] = [
   {
     acronym: "3DES",
     meaning: "Triple Data Encryption Standard",
-    explanation: "Applies the DES cipher three times to each data block for stronger encryption (effectively 112-bit security). Was a transitional upgrade from DES but is now deprecated in favor of AES due to slow performance.",
+    explanation:
+      "Applies the DES cipher three times to each data block for stronger encryption (effectively 112-bit security). Was a transitional upgrade from DES but is now deprecated in favor of AES due to slow performance.",
     category: "Cryptography",
     distractors: [
       "Third-Generation Data Encoding Scheme",
@@ -211,7 +225,8 @@ export const acronyms: Acronym[] = [
   {
     acronym: "RSA",
     meaning: "Rivest, Shamir, and Adleman",
-    explanation: "An asymmetric encryption algorithm named after its creators. Based on the difficulty of factoring large prime numbers. Widely used for digital signatures, key exchange, and certificate signing. Common key sizes: 2048 and 4096 bits.",
+    explanation:
+      "An asymmetric encryption algorithm named after its creators. Based on the difficulty of factoring large prime numbers. Widely used for digital signatures, key exchange, and certificate signing. Common key sizes: 2048 and 4096 bits.",
     category: "Cryptography",
     distractors: [
       "Randomized Symmetric Algorithm",
@@ -222,7 +237,8 @@ export const acronyms: Acronym[] = [
   {
     acronym: "ECC",
     meaning: "Elliptic Curve Cryptography",
-    explanation: "An asymmetric encryption approach using elliptic curves over finite fields. Provides equivalent security to RSA with much smaller key sizes (256-bit ECC ≈ 3072-bit RSA), making it ideal for mobile devices and IoT.",
+    explanation:
+      "An asymmetric encryption approach using elliptic curves over finite fields. Provides equivalent security to RSA with much smaller key sizes (256-bit ECC ≈ 3072-bit RSA), making it ideal for mobile devices and IoT.",
     category: "Cryptography",
     distractors: [
       "Encrypted Channel Communication",
@@ -233,7 +249,8 @@ export const acronyms: Acronym[] = [
   {
     acronym: "SHA",
     meaning: "Secure Hash Algorithm",
-    explanation: "A family of cryptographic hash functions (SHA-1, SHA-2, SHA-3) that produce a fixed-size digest from input data. Used for integrity verification, digital signatures, and password storage. SHA-256 (part of SHA-2) is most common today.",
+    explanation:
+      "A family of cryptographic hash functions (SHA-1, SHA-2, SHA-3) that produce a fixed-size digest from input data. Used for integrity verification, digital signatures, and password storage. SHA-256 (part of SHA-2) is most common today.",
     category: "Cryptography",
     distractors: [
       "Symmetric Hashing Architecture",
@@ -244,7 +261,8 @@ export const acronyms: Acronym[] = [
   {
     acronym: "HMAC",
     meaning: "Hash-Based Message Authentication Code",
-    explanation: "Combines a cryptographic hash function with a secret key to verify both integrity and authenticity of a message. Unlike a plain hash, only someone with the shared secret key can produce or verify the HMAC.",
+    explanation:
+      "Combines a cryptographic hash function with a secret key to verify both integrity and authenticity of a message. Unlike a plain hash, only someone with the shared secret key can produce or verify the HMAC.",
     category: "Cryptography",
     distractors: [
       "Host-Managed Access Control",
@@ -255,18 +273,16 @@ export const acronyms: Acronym[] = [
   {
     acronym: "IV",
     meaning: "Initialization Vector",
-    explanation: "A random or pseudo-random value used alongside an encryption key to ensure that encrypting the same plaintext twice produces different ciphertext. Prevents pattern analysis. Must be unique per encryption operation but doesn't need to be secret.",
+    explanation:
+      "A random or pseudo-random value used alongside an encryption key to ensure that encrypting the same plaintext twice produces different ciphertext. Prevents pattern analysis. Must be unique per encryption operation but doesn't need to be secret.",
     category: "Cryptography",
-    distractors: [
-      "Integrity Verification",
-      "Identity Validation",
-      "Indexed Variable",
-    ],
+    distractors: ["Integrity Verification", "Identity Validation", "Indexed Variable"],
   },
   {
     acronym: "ECDHE",
     meaning: "Elliptic Curve Diffie-Hellman Ephemeral",
-    explanation: "A key exchange protocol that uses elliptic curves and ephemeral (temporary) keys. Provides perfect forward secrecy — if long-term keys are compromised, past session keys remain secure. Widely used in TLS handshakes.",
+    explanation:
+      "A key exchange protocol that uses elliptic curves and ephemeral (temporary) keys. Provides perfect forward secrecy — if long-term keys are compromised, past session keys remain secure. Widely used in TLS handshakes.",
     category: "Cryptography",
     distractors: [
       "Encrypted Channel Data Hash Exchange",
@@ -277,18 +293,16 @@ export const acronyms: Acronym[] = [
   {
     acronym: "PGP",
     meaning: "Pretty Good Privacy",
-    explanation: "An encryption program for signing, encrypting, and decrypting emails and files. Uses a combination of symmetric and asymmetric encryption. Uses a web of trust model instead of a central CA for key verification.",
+    explanation:
+      "An encryption program for signing, encrypting, and decrypting emails and files. Uses a combination of symmetric and asymmetric encryption. Uses a web of trust model instead of a central CA for key verification.",
     category: "Cryptography",
-    distractors: [
-      "Public Group Protocol",
-      "Protected Gateway Proxy",
-      "Portable Guard Platform",
-    ],
+    distractors: ["Public Group Protocol", "Protected Gateway Proxy", "Portable Guard Platform"],
   },
   {
     acronym: "S/MIME",
     meaning: "Secure/Multipurpose Internet Mail Extensions",
-    explanation: "A standard for public-key encryption and signing of email messages. Unlike PGP, it relies on a hierarchical CA trust model. Provides confidentiality, integrity, authentication, and non-repudiation for email.",
+    explanation:
+      "A standard for public-key encryption and signing of email messages. Unlike PGP, it relies on a hierarchical CA trust model. Provides confidentiality, integrity, authentication, and non-repudiation for email.",
     category: "Cryptography",
     distractors: [
       "Signed/Managed Internet Message Encryption",
@@ -299,7 +313,8 @@ export const acronyms: Acronym[] = [
   {
     acronym: "PBKDF2",
     meaning: "Password-Based Key Derivation Function 2",
-    explanation: "A key-stretching algorithm that applies a pseudorandom function (like HMAC-SHA256) to a password along with a salt, repeated many thousands of times. Makes brute-force attacks on passwords computationally expensive.",
+    explanation:
+      "A key-stretching algorithm that applies a pseudorandom function (like HMAC-SHA256) to a password along with a salt, repeated many thousands of times. Makes brute-force attacks on passwords computationally expensive.",
     category: "Cryptography",
     distractors: [
       "Public Block Key Distribution Framework 2",
@@ -312,7 +327,8 @@ export const acronyms: Acronym[] = [
   {
     acronym: "VPN",
     meaning: "Virtual Private Network",
-    explanation: "Creates an encrypted tunnel over a public network (like the internet) to securely connect remote users or sites to a private network. Common protocols include IPSec, OpenVPN, and WireGuard.",
+    explanation:
+      "Creates an encrypted tunnel over a public network (like the internet) to securely connect remote users or sites to a private network. Common protocols include IPSec, OpenVPN, and WireGuard.",
     category: "Network Security",
     distractors: [
       "Verified Perimeter Node",
@@ -323,7 +339,8 @@ export const acronyms: Acronym[] = [
   {
     acronym: "IDS",
     meaning: "Intrusion Detection System",
-    explanation: "Monitors network traffic or system activity for malicious behavior or policy violations and generates alerts. Passive — it detects and reports but does not block attacks. Can be network-based (NIDS) or host-based (HIDS).",
+    explanation:
+      "Monitors network traffic or system activity for malicious behavior or policy violations and generates alerts. Passive — it detects and reports but does not block attacks. Can be network-based (NIDS) or host-based (HIDS).",
     category: "Network Security",
     distractors: [
       "Integrated Data Scanner",
@@ -334,7 +351,8 @@ export const acronyms: Acronym[] = [
   {
     acronym: "IPS",
     meaning: "Intrusion Prevention System",
-    explanation: "Similar to IDS but sits inline with network traffic and can actively block or drop malicious packets in real time. Provides automatic response to detected threats rather than just alerting.",
+    explanation:
+      "Similar to IDS but sits inline with network traffic and can actively block or drop malicious packets in real time. Provides automatic response to detected threats rather than just alerting.",
     category: "Network Security",
     distractors: [
       "Internet Packet Scanner",
@@ -345,7 +363,8 @@ export const acronyms: Acronym[] = [
   {
     acronym: "NIDS",
     meaning: "Network-Based Intrusion Detection System",
-    explanation: "An IDS that monitors network traffic at strategic points (e.g. network perimeter) to detect suspicious activity. Analyzes packet headers and payloads using signature-based or anomaly-based detection methods.",
+    explanation:
+      "An IDS that monitors network traffic at strategic points (e.g. network perimeter) to detect suspicious activity. Analyzes packet headers and payloads using signature-based or anomaly-based detection methods.",
     category: "Network Security",
     distractors: [
       "Node-Integrated Defense Scanner",
@@ -356,7 +375,8 @@ export const acronyms: Acronym[] = [
   {
     acronym: "HIDS",
     meaning: "Host-Based Intrusion Detection System",
-    explanation: "An IDS installed on individual hosts that monitors system calls, file changes, registry modifications, and local logs for signs of intrusion. Can detect attacks that network-based systems miss, like insider threats.",
+    explanation:
+      "An IDS installed on individual hosts that monitors system calls, file changes, registry modifications, and local logs for signs of intrusion. Can detect attacks that network-based systems miss, like insider threats.",
     category: "Network Security",
     distractors: [
       "Hardened Internal Defense Scanner",
@@ -367,7 +387,8 @@ export const acronyms: Acronym[] = [
   {
     acronym: "WAF",
     meaning: "Web Application Firewall",
-    explanation: "A firewall specifically designed to filter, monitor, and block HTTP/HTTPS traffic to and from a web application. Protects against web attacks like SQL injection, XSS, and CSRF by inspecting application-layer traffic.",
+    explanation:
+      "A firewall specifically designed to filter, monitor, and block HTTP/HTTPS traffic to and from a web application. Protects against web attacks like SQL injection, XSS, and CSRF by inspecting application-layer traffic.",
     category: "Network Security",
     distractors: [
       "Wireless Authentication Framework",
@@ -378,7 +399,8 @@ export const acronyms: Acronym[] = [
   {
     acronym: "NAC",
     meaning: "Network Access Control",
-    explanation: "Restricts access to a network based on the identity and security posture of a device. Can check for antivirus status, OS patches, and compliance before granting network access. Non-compliant devices may be quarantined.",
+    explanation:
+      "Restricts access to a network based on the identity and security posture of a device. Can check for antivirus status, OS patches, and compliance before granting network access. Non-compliant devices may be quarantined.",
     category: "Network Security",
     distractors: [
       "Node Authentication Certificate",
@@ -389,18 +411,16 @@ export const acronyms: Acronym[] = [
   {
     acronym: "DMZ",
     meaning: "Demilitarized Zone",
-    explanation: "A network segment that sits between a trusted internal network and an untrusted external network (the internet). Hosts public-facing services (web servers, mail servers) while protecting the internal network from direct exposure.",
+    explanation:
+      "A network segment that sits between a trusted internal network and an untrusted external network (the internet). Hosts public-facing services (web servers, mail servers) while protecting the internal network from direct exposure.",
     category: "Network Security",
-    distractors: [
-      "Data Management Zone",
-      "Distributed Monitoring Zone",
-      "Dynamic Mapping Zone",
-    ],
+    distractors: ["Data Management Zone", "Distributed Monitoring Zone", "Dynamic Mapping Zone"],
   },
   {
     acronym: "VLAN",
     meaning: "Virtual Local Area Network",
-    explanation: "A logical subdivision of a physical network that groups devices together regardless of their physical location. Provides network segmentation, reduces broadcast traffic, and improves security by isolating sensitive systems.",
+    explanation:
+      "A logical subdivision of a physical network that groups devices together regardless of their physical location. Provides network segmentation, reduces broadcast traffic, and improves security by isolating sensitive systems.",
     category: "Network Security",
     distractors: [
       "Verified Link Access Node",
@@ -411,7 +431,8 @@ export const acronyms: Acronym[] = [
   {
     acronym: "NAT",
     meaning: "Network Address Translation",
-    explanation: "Translates private IP addresses to public IP addresses (and vice versa) at a router or firewall. Conserves public IP addresses and provides a basic layer of security by hiding internal network structure.",
+    explanation:
+      "Translates private IP addresses to public IP addresses (and vice versa) at a router or firewall. Conserves public IP addresses and provides a basic layer of security by hiding internal network structure.",
     category: "Network Security",
     distractors: [
       "Node Authentication Token",
@@ -422,7 +443,8 @@ export const acronyms: Acronym[] = [
   {
     acronym: "SIEM",
     meaning: "Security Information and Event Management",
-    explanation: "Aggregates and correlates log data from across an organization's infrastructure (servers, firewalls, endpoints) to detect threats, trigger alerts, and support incident investigation. Central tool in a SOC.",
+    explanation:
+      "Aggregates and correlates log data from across an organization's infrastructure (servers, firewalls, endpoints) to detect threats, trigger alerts, and support incident investigation. Central tool in a SOC.",
     category: "Network Security",
     distractors: [
       "System Integrity and Endpoint Monitoring",
@@ -433,7 +455,8 @@ export const acronyms: Acronym[] = [
   {
     acronym: "SOAR",
     meaning: "Security Orchestration, Automation, and Response",
-    explanation: "Platforms that integrate security tools, automate repetitive tasks (like enriching alerts), and orchestrate incident response workflows. Works alongside SIEM to reduce response time and analyst fatigue.",
+    explanation:
+      "Platforms that integrate security tools, automate repetitive tasks (like enriching alerts), and orchestrate incident response workflows. Works alongside SIEM to reduce response time and analyst fatigue.",
     category: "Network Security",
     distractors: [
       "System Operations, Audit, and Remediation",
@@ -444,29 +467,24 @@ export const acronyms: Acronym[] = [
   {
     acronym: "UTM",
     meaning: "Unified Threat Management",
-    explanation: "An all-in-one security appliance that combines multiple security functions — firewall, IDS/IPS, antivirus, content filtering, VPN — into a single device. Simplifies management for small to mid-sized organizations.",
+    explanation:
+      "An all-in-one security appliance that combines multiple security functions — firewall, IDS/IPS, antivirus, content filtering, VPN — into a single device. Simplifies management for small to mid-sized organizations.",
     category: "Network Security",
-    distractors: [
-      "Universal Transport Mechanism",
-      "User Trust Model",
-      "Unified Token Manager",
-    ],
+    distractors: ["Universal Transport Mechanism", "User Trust Model", "Unified Token Manager"],
   },
   {
     acronym: "DLP",
     meaning: "Data Loss Prevention",
-    explanation: "Tools and policies that detect and prevent unauthorized transmission of sensitive data outside the organization. Can monitor email, web uploads, USB drives, and cloud storage. Uses content inspection and contextual analysis.",
+    explanation:
+      "Tools and policies that detect and prevent unauthorized transmission of sensitive data outside the organization. Can monitor email, web uploads, USB drives, and cloud storage. Uses content inspection and contextual analysis.",
     category: "Network Security",
-    distractors: [
-      "Digital Logging Platform",
-      "Device Lifecycle Policy",
-      "Dynamic Link Protection",
-    ],
+    distractors: ["Digital Logging Platform", "Device Lifecycle Policy", "Dynamic Link Protection"],
   },
   {
     acronym: "NGFW",
     meaning: "Next-Generation Firewall",
-    explanation: "A firewall that goes beyond traditional port/protocol filtering to include application-layer inspection, integrated IPS, threat intelligence feeds, and deep packet inspection. Can identify and control specific applications.",
+    explanation:
+      "A firewall that goes beyond traditional port/protocol filtering to include application-layer inspection, integrated IPS, threat intelligence feeds, and deep packet inspection. Can identify and control specific applications.",
     category: "Network Security",
     distractors: [
       "Network Gateway Filtering Workload",
@@ -479,40 +497,32 @@ export const acronyms: Acronym[] = [
   {
     acronym: "TLS",
     meaning: "Transport Layer Security",
-    explanation: "The successor to SSL, TLS encrypts data in transit between clients and servers. Provides confidentiality, integrity, and authentication via certificates. TLS 1.2 and 1.3 are current standards; earlier versions are deprecated.",
+    explanation:
+      "The successor to SSL, TLS encrypts data in transit between clients and servers. Provides confidentiality, integrity, and authentication via certificates. TLS 1.2 and 1.3 are current standards; earlier versions are deprecated.",
     category: "Protocols",
-    distractors: [
-      "Trusted Link Session",
-      "Token Lifecycle Standard",
-      "Tunneled Login Service",
-    ],
+    distractors: ["Trusted Link Session", "Token Lifecycle Standard", "Tunneled Login Service"],
   },
   {
     acronym: "SSL",
     meaning: "Secure Sockets Layer",
-    explanation: "The predecessor to TLS for encrypting internet communications. All versions (SSL 2.0, 3.0) are now deprecated due to known vulnerabilities like POODLE. The term 'SSL' is still colloquially used but TLS is what's actually in use.",
+    explanation:
+      "The predecessor to TLS for encrypting internet communications. All versions (SSL 2.0, 3.0) are now deprecated due to known vulnerabilities like POODLE. The term 'SSL' is still colloquially used but TLS is what's actually in use.",
     category: "Protocols",
-    distractors: [
-      "Session Security Link",
-      "Signed Socket Library",
-      "Standard Security Layer",
-    ],
+    distractors: ["Session Security Link", "Signed Socket Library", "Standard Security Layer"],
   },
   {
     acronym: "SSH",
     meaning: "Secure Shell",
-    explanation: "A protocol for secure remote login and command execution over an unsecured network. Replaces insecure protocols like Telnet. Uses port 22 and provides encrypted communication, key-based authentication, and secure tunneling.",
+    explanation:
+      "A protocol for secure remote login and command execution over an unsecured network. Replaces insecure protocols like Telnet. Uses port 22 and provides encrypted communication, key-based authentication, and secure tunneling.",
     category: "Protocols",
-    distractors: [
-      "Signed Session Handler",
-      "System Security Host",
-      "Symmetric Session Handshake",
-    ],
+    distractors: ["Signed Session Handler", "System Security Host", "Symmetric Session Handshake"],
   },
   {
     acronym: "HTTPS",
     meaning: "Hypertext Transfer Protocol Secure",
-    explanation: "HTTP encrypted with TLS. Secures web traffic between browsers and servers, ensuring confidentiality and integrity. Uses port 443. The padlock icon in browsers indicates an HTTPS connection with a valid certificate.",
+    explanation:
+      "HTTP encrypted with TLS. Secures web traffic between browsers and servers, ensuring confidentiality and integrity. Uses port 443. The padlock icon in browsers indicates an HTTPS connection with a valid certificate.",
     category: "Protocols",
     distractors: [
       "Host-to-Host Transport Protocol Standard",
@@ -523,7 +533,8 @@ export const acronyms: Acronym[] = [
   {
     acronym: "SFTP",
     meaning: "Secure File Transfer Protocol",
-    explanation: "A file transfer protocol that runs over SSH (port 22), providing encrypted file transfers. Not related to FTP — it's an entirely different protocol. Provides strong authentication and encryption for file operations.",
+    explanation:
+      "A file transfer protocol that runs over SSH (port 22), providing encrypted file transfers. Not related to FTP — it's an entirely different protocol. Provides strong authentication and encryption for file operations.",
     category: "Protocols",
     distractors: [
       "Standard File Tunneling Protocol",
@@ -534,7 +545,8 @@ export const acronyms: Acronym[] = [
   {
     acronym: "FTPS",
     meaning: "File Transfer Protocol Secure",
-    explanation: "FTP with added TLS/SSL encryption. Unlike SFTP, it is an extension of the original FTP protocol. Can operate in explicit mode (STARTTLS) or implicit mode (port 990). More firewall-complex than SFTP due to separate data channels.",
+    explanation:
+      "FTP with added TLS/SSL encryption. Unlike SFTP, it is an extension of the original FTP protocol. Can operate in explicit mode (STARTTLS) or implicit mode (port 990). More firewall-complex than SFTP due to separate data channels.",
     category: "Protocols",
     distractors: [
       "Federated Token Provisioning Service",
@@ -545,7 +557,8 @@ export const acronyms: Acronym[] = [
   {
     acronym: "LDAP",
     meaning: "Lightweight Directory Access Protocol",
-    explanation: "A protocol for accessing and managing directory services (like Active Directory). Used to look up user accounts, groups, and other resources. Operates on port 389. Transmits data in cleartext by default.",
+    explanation:
+      "A protocol for accessing and managing directory services (like Active Directory). Used to look up user accounts, groups, and other resources. Operates on port 389. Transmits data in cleartext by default.",
     category: "Protocols",
     distractors: [
       "Local Domain Authentication Platform",
@@ -556,7 +569,8 @@ export const acronyms: Acronym[] = [
   {
     acronym: "LDAPS",
     meaning: "Lightweight Directory Access Protocol Secure",
-    explanation: "LDAP encrypted with TLS/SSL on port 636. Provides the same directory lookup functionality as LDAP but with encrypted communication to protect credentials and directory data in transit.",
+    explanation:
+      "LDAP encrypted with TLS/SSL on port 636. Provides the same directory lookup functionality as LDAP but with encrypted communication to protect credentials and directory data in transit.",
     category: "Protocols",
     distractors: [
       "Local Domain Authentication Protocol Standard",
@@ -567,7 +581,8 @@ export const acronyms: Acronym[] = [
   {
     acronym: "RADIUS",
     meaning: "Remote Authentication Dial-In User Service",
-    explanation: "A networking protocol that provides centralized AAA for users connecting to a network. Commonly used for Wi-Fi authentication (802.1X), VPN access, and network device administration. Encrypts only the password, not the full packet.",
+    explanation:
+      "A networking protocol that provides centralized AAA for users connecting to a network. Commonly used for Wi-Fi authentication (802.1X), VPN access, and network device administration. Encrypts only the password, not the full packet.",
     category: "Protocols",
     distractors: [
       "Redundant Access Distribution for Identity and User Sessions",
@@ -578,7 +593,8 @@ export const acronyms: Acronym[] = [
   {
     acronym: "TACACS+",
     meaning: "Terminal Access Controller Access-Control System Plus",
-    explanation: "A Cisco-developed AAA protocol that encrypts the entire packet body (unlike RADIUS). Separates authentication, authorization, and accounting into distinct processes. Primarily used for managing network device access (routers, switches).",
+    explanation:
+      "A Cisco-developed AAA protocol that encrypts the entire packet body (unlike RADIUS). Separates authentication, authorization, and accounting into distinct processes. Primarily used for managing network device access (routers, switches).",
     category: "Protocols",
     distractors: [
       "Trusted Authentication and Centralized Access Credential System Plus",
@@ -589,7 +605,8 @@ export const acronyms: Acronym[] = [
   {
     acronym: "SNMP",
     meaning: "Simple Network Management Protocol",
-    explanation: "A protocol for monitoring and managing network devices (routers, switches, servers). Uses agents on devices that report to a management station. SNMPv3 adds encryption and authentication; older versions transmit community strings in plaintext.",
+    explanation:
+      "A protocol for monitoring and managing network devices (routers, switches, servers). Uses agents on devices that report to a management station. SNMPv3 adds encryption and authentication; older versions transmit community strings in plaintext.",
     category: "Protocols",
     distractors: [
       "Secure Node Monitoring Platform",
@@ -600,7 +617,8 @@ export const acronyms: Acronym[] = [
   {
     acronym: "DNSSEC",
     meaning: "Domain Name System Security Extensions",
-    explanation: "Adds cryptographic signatures to DNS records to verify their authenticity and integrity. Protects against DNS spoofing and cache poisoning by allowing resolvers to validate that responses haven't been tampered with. Does not encrypt DNS queries.",
+    explanation:
+      "Adds cryptographic signatures to DNS records to verify their authenticity and integrity. Protects against DNS spoofing and cache poisoning by allowing resolvers to validate that responses haven't been tampered with. Does not encrypt DNS queries.",
     category: "Protocols",
     distractors: [
       "Distributed Namespace Secure Session Encryption Channel",
@@ -611,7 +629,8 @@ export const acronyms: Acronym[] = [
   {
     acronym: "IPSec",
     meaning: "Internet Protocol Security",
-    explanation: "A suite of protocols that encrypts and authenticates IP packets. Operates in transport mode (encrypts payload only) or tunnel mode (encrypts entire packet). Uses AH for authentication and ESP for encryption. Core technology behind many VPNs.",
+    explanation:
+      "A suite of protocols that encrypts and authenticates IP packets. Operates in transport mode (encrypts payload only) or tunnel mode (encrypts entire packet). Uses AH for authentication and ESP for encryption. Core technology behind many VPNs.",
     category: "Protocols",
     distractors: [
       "Inline Packet Secure Encryption Channel",
@@ -622,18 +641,16 @@ export const acronyms: Acronym[] = [
   {
     acronym: "AH",
     meaning: "Authentication Header",
-    explanation: "An IPSec protocol that provides data integrity and authentication for IP packets but does NOT provide encryption. Protects against replay attacks using sequence numbers. Less commonly used than ESP since it lacks confidentiality.",
+    explanation:
+      "An IPSec protocol that provides data integrity and authentication for IP packets but does NOT provide encryption. Protects against replay attacks using sequence numbers. Less commonly used than ESP since it lacks confidentiality.",
     category: "Protocols",
-    distractors: [
-      "Access Handler",
-      "Audit Hash",
-      "Application Handshake",
-    ],
+    distractors: ["Access Handler", "Audit Hash", "Application Handshake"],
   },
   {
     acronym: "ESP",
     meaning: "Encapsulating Security Payload",
-    explanation: "An IPSec protocol that provides confidentiality (encryption), integrity, and authentication for IP packets. More commonly used than AH because it includes encryption. Can operate in transport or tunnel mode.",
+    explanation:
+      "An IPSec protocol that provides confidentiality (encryption), integrity, and authentication for IP packets. More commonly used than AH because it includes encryption. Can operate in transport or tunnel mode.",
     category: "Protocols",
     distractors: [
       "Encrypted Session Protocol",
@@ -644,18 +661,16 @@ export const acronyms: Acronym[] = [
   {
     acronym: "IKE",
     meaning: "Internet Key Exchange",
-    explanation: "A protocol used within IPSec to negotiate security associations and exchange encryption keys between two parties. IKEv2 is the current version, providing improved performance, reliability, and support for mobile devices.",
+    explanation:
+      "A protocol used within IPSec to negotiate security associations and exchange encryption keys between two parties. IKEv2 is the current version, providing improved performance, reliability, and support for mobile devices.",
     category: "Protocols",
-    distractors: [
-      "Identity Kerberos Enrollment",
-      "Inline Key Encryption",
-      "Integrated Key Escrow",
-    ],
+    distractors: ["Identity Kerberos Enrollment", "Inline Key Encryption", "Integrated Key Escrow"],
   },
   {
     acronym: "EAP",
     meaning: "Extensible Authentication Protocol",
-    explanation: "An authentication framework (not a specific method) used in wireless networks and point-to-point connections. Supports multiple authentication methods like certificates, tokens, and smart cards. Used with 802.1X for network access control.",
+    explanation:
+      "An authentication framework (not a specific method) used in wireless networks and point-to-point connections. Supports multiple authentication methods like certificates, tokens, and smart cards. Used with 802.1X for network access control.",
     category: "Protocols",
     distractors: [
       "Enterprise Access Platform",
@@ -666,7 +681,8 @@ export const acronyms: Acronym[] = [
   {
     acronym: "PEAP",
     meaning: "Protected Extensible Authentication Protocol",
-    explanation: "An EAP method that creates a TLS tunnel between the client and authentication server, then performs authentication inside that tunnel. Only the server needs a certificate. Common in enterprise Wi-Fi (WPA2/WPA3-Enterprise).",
+    explanation:
+      "An EAP method that creates a TLS tunnel between the client and authentication server, then performs authentication inside that tunnel. Only the server needs a certificate. Common in enterprise Wi-Fi (WPA2/WPA3-Enterprise).",
     category: "Protocols",
     distractors: [
       "Passwordless Encrypted Access Protocol",
@@ -677,7 +693,8 @@ export const acronyms: Acronym[] = [
   {
     acronym: "SAML",
     meaning: "Security Assertion Markup Language",
-    explanation: "An XML-based standard for exchanging authentication and authorization data between an identity provider and a service provider. Enables SSO for web applications. The IdP sends a signed assertion to the SP proving the user's identity.",
+    explanation:
+      "An XML-based standard for exchanging authentication and authorization data between an identity provider and a service provider. Enables SSO for web applications. The IdP sends a signed assertion to the SP proving the user's identity.",
     category: "Protocols",
     distractors: [
       "Secure Authentication and Messaging Layer",
@@ -688,7 +705,8 @@ export const acronyms: Acronym[] = [
   {
     acronym: "OAuth",
     meaning: "Open Authorization",
-    explanation: "An authorization framework that allows third-party applications to access a user's resources without exposing their credentials. Uses access tokens instead of passwords. OAuth 2.0 is the current standard — it handles authorization, not authentication.",
+    explanation:
+      "An authorization framework that allows third-party applications to access a user's resources without exposing their credentials. Uses access tokens instead of passwords. OAuth 2.0 is the current standard — it handles authorization, not authentication.",
     category: "Protocols",
     distractors: [
       "Online Authentication",
@@ -699,7 +717,8 @@ export const acronyms: Acronym[] = [
   {
     acronym: "OIDC",
     meaning: "OpenID Connect",
-    explanation: "An identity layer built on top of OAuth 2.0 that adds authentication. While OAuth handles authorization ('what can you access'), OIDC adds identity verification ('who are you') via ID tokens. Used by Google, Microsoft, etc. for login.",
+    explanation:
+      "An identity layer built on top of OAuth 2.0 that adds authentication. While OAuth handles authorization ('what can you access'), OIDC adds identity verification ('who are you') via ID tokens. Used by Google, Microsoft, etc. for login.",
     category: "Protocols",
     distractors: [
       "Online Identity and Device Certification",
@@ -710,7 +729,8 @@ export const acronyms: Acronym[] = [
   {
     acronym: "Kerberos",
     meaning: "Network Authentication Protocol Using Tickets and a KDC",
-    explanation: "A ticket-based authentication protocol used in Active Directory. A Key Distribution Center (KDC) issues time-limited tickets so users can access services without repeatedly sending passwords. Uses symmetric encryption and mutual authentication.",
+    explanation:
+      "A ticket-based authentication protocol used in Active Directory. A Key Distribution Center (KDC) issues time-limited tickets so users can access services without repeatedly sending passwords. Uses symmetric encryption and mutual authentication.",
     category: "Protocols",
     distractors: [
       "Key Exchange and Role-Based Encryption for Routed Operating Systems",
@@ -723,7 +743,8 @@ export const acronyms: Acronym[] = [
   {
     acronym: "APT",
     meaning: "Advanced Persistent Threat",
-    explanation: "A prolonged, targeted cyberattack where an intruder gains access and remains undetected for an extended period. Typically state-sponsored or well-funded groups targeting specific organizations to steal data or maintain surveillance.",
+    explanation:
+      "A prolonged, targeted cyberattack where an intruder gains access and remains undetected for an extended period. Typically state-sponsored or well-funded groups targeting specific organizations to steal data or maintain surveillance.",
     category: "Threats and Attacks",
     distractors: [
       "Automated Penetration Technique",
@@ -734,7 +755,8 @@ export const acronyms: Acronym[] = [
   {
     acronym: "DDoS",
     meaning: "Distributed Denial of Service",
-    explanation: "An attack where multiple compromised systems (a botnet) flood a target with traffic to overwhelm its resources and make it unavailable. Distributed nature makes it harder to mitigate than a single-source DoS attack.",
+    explanation:
+      "An attack where multiple compromised systems (a botnet) flood a target with traffic to overwhelm its resources and make it unavailable. Distributed nature makes it harder to mitigate than a single-source DoS attack.",
     category: "Threats and Attacks",
     distractors: [
       "Dynamic Data Overload System",
@@ -745,18 +767,16 @@ export const acronyms: Acronym[] = [
   {
     acronym: "DoS",
     meaning: "Denial of Service",
-    explanation: "An attack that aims to make a system, service, or network unavailable by overwhelming it with traffic or exploiting a vulnerability to crash it. Originates from a single source, unlike DDoS.",
+    explanation:
+      "An attack that aims to make a system, service, or network unavailable by overwhelming it with traffic or exploiting a vulnerability to crash it. Originates from a single source, unlike DDoS.",
     category: "Threats and Attacks",
-    distractors: [
-      "Disruption of Sessions",
-      "Degradation of Security",
-      "Data Overflow Scenario",
-    ],
+    distractors: ["Disruption of Sessions", "Degradation of Security", "Data Overflow Scenario"],
   },
   {
     acronym: "MITM",
     meaning: "Man-in-the-Middle",
-    explanation: "An attack where the attacker secretly intercepts and possibly alters communication between two parties who believe they are communicating directly. Can capture credentials, inject malicious content, or eavesdrop. TLS and certificate pinning help prevent this.",
+    explanation:
+      "An attack where the attacker secretly intercepts and possibly alters communication between two parties who believe they are communicating directly. Can capture credentials, inject malicious content, or eavesdrop. TLS and certificate pinning help prevent this.",
     category: "Threats and Attacks",
     distractors: [
       "Malware Insertion Through Masquerading",
@@ -767,7 +787,8 @@ export const acronyms: Acronym[] = [
   {
     acronym: "XSS",
     meaning: "Cross-Site Scripting",
-    explanation: "A web vulnerability where an attacker injects malicious scripts into web pages viewed by other users. Can steal session cookies, redirect users, or deface websites. Types include stored, reflected, and DOM-based XSS.",
+    explanation:
+      "A web vulnerability where an attacker injects malicious scripts into web pages viewed by other users. Can steal session cookies, redirect users, or deface websites. Types include stored, reflected, and DOM-based XSS.",
     category: "Threats and Attacks",
     distractors: [
       "Extended Session Spoofing",
@@ -778,7 +799,8 @@ export const acronyms: Acronym[] = [
   {
     acronym: "CSRF",
     meaning: "Cross-Site Request Forgery",
-    explanation: "An attack that tricks a user's browser into making unwanted requests to a site where they're authenticated. For example, clicking a malicious link that transfers money from your bank. Prevented with anti-CSRF tokens and SameSite cookies.",
+    explanation:
+      "An attack that tricks a user's browser into making unwanted requests to a site where they're authenticated. For example, clicking a malicious link that transfers money from your bank. Prevented with anti-CSRF tokens and SameSite cookies.",
     category: "Threats and Attacks",
     distractors: [
       "Credential Session Replay Framework",
@@ -789,7 +811,8 @@ export const acronyms: Acronym[] = [
   {
     acronym: "SQLi",
     meaning: "SQL Injection",
-    explanation: "An attack that inserts malicious SQL code into application queries through user input fields. Can read, modify, or delete database contents, bypass authentication, or execute system commands. Prevented with parameterized queries.",
+    explanation:
+      "An attack that inserts malicious SQL code into application queries through user input fields. Can read, modify, or delete database contents, bypass authentication, or execute system commands. Prevented with parameterized queries.",
     category: "Threats and Attacks",
     distractors: [
       "Structured Query Leak Interception",
@@ -800,7 +823,8 @@ export const acronyms: Acronym[] = [
   {
     acronym: "RAT",
     meaning: "Remote Access Trojan",
-    explanation: "Malware that provides an attacker with remote control over an infected system. Disguised as legitimate software, it can capture keystrokes, access the webcam, exfiltrate files, and install additional malware — all without the user's knowledge.",
+    explanation:
+      "Malware that provides an attacker with remote control over an infected system. Disguised as legitimate software, it can capture keystrokes, access the webcam, exfiltrate files, and install additional malware — all without the user's knowledge.",
     category: "Threats and Attacks",
     distractors: [
       "Rootkit Authentication Token",
@@ -811,7 +835,8 @@ export const acronyms: Acronym[] = [
   {
     acronym: "PUP",
     meaning: "Potentially Unwanted Program",
-    explanation: "Software that a user may not have intentionally installed, often bundled with other downloads. Includes adware, browser toolbars, and system 'optimizers'. Not strictly malware but degrades performance and may collect data.",
+    explanation:
+      "Software that a user may not have intentionally installed, often bundled with other downloads. Includes adware, browser toolbars, and system 'optimizers'. Not strictly malware but degrades performance and may collect data.",
     category: "Threats and Attacks",
     distractors: [
       "Privilege Upgrade Payload",
@@ -822,7 +847,8 @@ export const acronyms: Acronym[] = [
   {
     acronym: "IoC",
     meaning: "Indicator of Compromise",
-    explanation: "Evidence that a security breach has occurred — such as unusual network traffic, unexpected file changes, known malicious IP addresses, or suspicious registry entries. Used by analysts to detect and investigate incidents.",
+    explanation:
+      "Evidence that a security breach has occurred — such as unusual network traffic, unexpected file changes, known malicious IP addresses, or suspicious registry entries. Used by analysts to detect and investigate incidents.",
     category: "Threats and Attacks",
     distractors: [
       "Instance of Contamination",
@@ -833,7 +859,8 @@ export const acronyms: Acronym[] = [
   {
     acronym: "CVE",
     meaning: "Common Vulnerabilities and Exposures",
-    explanation: "A standardized catalog of publicly disclosed security vulnerabilities, each assigned a unique ID (e.g., CVE-2024-1234). Maintained by MITRE, it provides a common reference for discussing and tracking vulnerabilities across tools and organizations.",
+    explanation:
+      "A standardized catalog of publicly disclosed security vulnerabilities, each assigned a unique ID (e.g., CVE-2024-1234). Maintained by MITRE, it provides a common reference for discussing and tracking vulnerabilities across tools and organizations.",
     category: "Threats and Attacks",
     distractors: [
       "Centralized Vulnerability Engine",
@@ -844,7 +871,8 @@ export const acronyms: Acronym[] = [
   {
     acronym: "CVSS",
     meaning: "Common Vulnerability Scoring System",
-    explanation: "A scoring framework that rates the severity of vulnerabilities on a 0–10 scale based on factors like attack complexity, required privileges, and impact. Helps organizations prioritize which vulnerabilities to patch first.",
+    explanation:
+      "A scoring framework that rates the severity of vulnerabilities on a 0–10 scale based on factors like attack complexity, required privileges, and impact. Helps organizations prioritize which vulnerabilities to patch first.",
     category: "Threats and Attacks",
     distractors: [
       "Centralized Vulnerability Scanning Service",
@@ -855,7 +883,8 @@ export const acronyms: Acronym[] = [
   {
     acronym: "TTPs",
     meaning: "Tactics, Techniques, and Procedures",
-    explanation: "Describes the behavior patterns of threat actors. Tactics are the 'why' (goals), techniques are the 'how' (methods), and procedures are specific implementations. The MITRE ATT&CK framework organizes known adversary TTPs.",
+    explanation:
+      "Describes the behavior patterns of threat actors. Tactics are the 'why' (goals), techniques are the 'how' (methods), and procedures are specific implementations. The MITRE ATT&CK framework organizes known adversary TTPs.",
     category: "Threats and Attacks",
     distractors: [
       "Threat Tracking and Profiling Standards",
@@ -866,7 +895,8 @@ export const acronyms: Acronym[] = [
   {
     acronym: "STIX",
     meaning: "Structured Threat Information eXpression",
-    explanation: "A standardized language (JSON-based) for describing cyber threat intelligence — including indicators, threat actors, campaigns, and attack patterns. Used with TAXII for automated sharing of threat data between organizations.",
+    explanation:
+      "A standardized language (JSON-based) for describing cyber threat intelligence — including indicators, threat actors, campaigns, and attack patterns. Used with TAXII for automated sharing of threat data between organizations.",
     category: "Threats and Attacks",
     distractors: [
       "Standard Threat Intelligence eXchange",
@@ -877,7 +907,8 @@ export const acronyms: Acronym[] = [
   {
     acronym: "TAXII",
     meaning: "Trusted Automated eXchange of Intelligence Information",
-    explanation: "A transport protocol for sharing STIX-formatted threat intelligence over HTTPS. Defines how threat data is requested and delivered between servers and clients. Enables automated, real-time threat intelligence sharing.",
+    explanation:
+      "A transport protocol for sharing STIX-formatted threat intelligence over HTTPS. Defines how threat data is requested and delivered between servers and clients. Enables automated, real-time threat intelligence sharing.",
     category: "Threats and Attacks",
     distractors: [
       "Threat Analysis and eXtended Incident Investigation",
@@ -890,7 +921,8 @@ export const acronyms: Acronym[] = [
   {
     acronym: "BIA",
     meaning: "Business Impact Analysis",
-    explanation: "A process that identifies critical business functions and predicts the consequences of disruption. Determines RTO and RPO for each function, helping prioritize recovery efforts and resource allocation in disaster planning.",
+    explanation:
+      "A process that identifies critical business functions and predicts the consequences of disruption. Determines RTO and RPO for each function, helping prioritize recovery efforts and resource allocation in disaster planning.",
     category: "Risk and Compliance",
     distractors: [
       "Baseline Integrity Assessment",
@@ -901,7 +933,8 @@ export const acronyms: Acronym[] = [
   {
     acronym: "BCP",
     meaning: "Business Continuity Planning",
-    explanation: "The process of creating a plan to maintain or quickly resume business operations during and after a disaster. Covers people, processes, and technology. Broader than disaster recovery — includes communication plans, alternate work sites, etc.",
+    explanation:
+      "The process of creating a plan to maintain or quickly resume business operations during and after a disaster. Covers people, processes, and technology. Broader than disaster recovery — includes communication plans, alternate work sites, etc.",
     category: "Risk and Compliance",
     distractors: [
       "Baseline Configuration Protocol",
@@ -912,18 +945,16 @@ export const acronyms: Acronym[] = [
   {
     acronym: "DRP",
     meaning: "Disaster Recovery Plan",
-    explanation: "A documented plan focused specifically on restoring IT systems and infrastructure after a disaster. A subset of BCP, it details backup procedures, recovery steps, alternate sites, and testing schedules.",
+    explanation:
+      "A documented plan focused specifically on restoring IT systems and infrastructure after a disaster. A subset of BCP, it details backup procedures, recovery steps, alternate sites, and testing schedules.",
     category: "Risk and Compliance",
-    distractors: [
-      "Data Retention Policy",
-      "Device Remediation Procedure",
-      "Digital Risk Profile",
-    ],
+    distractors: ["Data Retention Policy", "Device Remediation Procedure", "Digital Risk Profile"],
   },
   {
     acronym: "RTO",
     meaning: "Recovery Time Objective",
-    explanation: "The maximum acceptable time to restore a system or process after a disruption. For example, an RTO of 4 hours means the system must be back online within 4 hours. Drives decisions about backup infrastructure and recovery procedures.",
+    explanation:
+      "The maximum acceptable time to restore a system or process after a disruption. For example, an RTO of 4 hours means the system must be back online within 4 hours. Drives decisions about backup infrastructure and recovery procedures.",
     category: "Risk and Compliance",
     distractors: [
       "Remediation Tracking Order",
@@ -934,18 +965,16 @@ export const acronyms: Acronym[] = [
   {
     acronym: "RPO",
     meaning: "Recovery Point Objective",
-    explanation: "The maximum acceptable amount of data loss measured in time. An RPO of 1 hour means you can lose at most 1 hour of data, so backups must occur at least hourly. Drives backup frequency decisions.",
+    explanation:
+      "The maximum acceptable amount of data loss measured in time. An RPO of 1 hour means you can lose at most 1 hour of data, so backups must occur at least hourly. Drives backup frequency decisions.",
     category: "Risk and Compliance",
-    distractors: [
-      "Redundancy Plan Outline",
-      "Risk Priority Order",
-      "Restore Process Overview",
-    ],
+    distractors: ["Redundancy Plan Outline", "Risk Priority Order", "Restore Process Overview"],
   },
   {
     acronym: "MTBF",
     meaning: "Mean Time Between Failures",
-    explanation: "The average time a system operates between failures. A higher MTBF indicates greater reliability. Used to predict hardware lifespan and plan maintenance schedules. For example, a server with MTBF of 50,000 hours is quite reliable.",
+    explanation:
+      "The average time a system operates between failures. A higher MTBF indicates greater reliability. Used to predict hardware lifespan and plan maintenance schedules. For example, a server with MTBF of 50,000 hours is quite reliable.",
     category: "Risk and Compliance",
     distractors: [
       "Maximum Throughput Before Failover",
@@ -956,7 +985,8 @@ export const acronyms: Acronym[] = [
   {
     acronym: "MTTR",
     meaning: "Mean Time to Repair",
-    explanation: "The average time it takes to repair a system and restore it to operation after a failure. A lower MTTR means faster recovery. Together with MTBF, it helps calculate system availability: MTBF / (MTBF + MTTR).",
+    explanation:
+      "The average time it takes to repair a system and restore it to operation after a failure. A lower MTTR means faster recovery. Together with MTBF, it helps calculate system availability: MTBF / (MTBF + MTTR).",
     category: "Risk and Compliance",
     distractors: [
       "Mean Time to Restore",
@@ -967,7 +997,8 @@ export const acronyms: Acronym[] = [
   {
     acronym: "SLA",
     meaning: "Service-Level Agreement",
-    explanation: "A formal contract between a service provider and customer defining expected service levels — uptime guarantees, response times, penalties for breaches. For example, '99.9% uptime' or 'support response within 4 hours'.",
+    explanation:
+      "A formal contract between a service provider and customer defining expected service levels — uptime guarantees, response times, penalties for breaches. For example, '99.9% uptime' or 'support response within 4 hours'.",
     category: "Risk and Compliance",
     distractors: [
       "Security Logging Architecture",
@@ -978,7 +1009,8 @@ export const acronyms: Acronym[] = [
   {
     acronym: "AUP",
     meaning: "Acceptable Use Policy",
-    explanation: "A policy that defines what users are and aren't allowed to do with organizational IT resources. Covers internet usage, email, software installation, personal device use, etc. Users typically sign it as a condition of access.",
+    explanation:
+      "A policy that defines what users are and aren't allowed to do with organizational IT resources. Covers internet usage, email, software installation, personal device use, etc. Users typically sign it as a condition of access.",
     category: "Risk and Compliance",
     distractors: [
       "Authorized User Profile",
@@ -989,7 +1021,8 @@ export const acronyms: Acronym[] = [
   {
     acronym: "NDA",
     meaning: "Non-Disclosure Agreement",
-    explanation: "A legal contract that prohibits sharing confidential information with unauthorized parties. Used when employees, contractors, or partners have access to trade secrets, proprietary data, or sensitive business information.",
+    explanation:
+      "A legal contract that prohibits sharing confidential information with unauthorized parties. Used when employees, contractors, or partners have access to trade secrets, proprietary data, or sensitive business information.",
     category: "Risk and Compliance",
     distractors: [
       "Network Defense Architecture",
@@ -1000,7 +1033,8 @@ export const acronyms: Acronym[] = [
   {
     acronym: "PII",
     meaning: "Personally Identifiable Information",
-    explanation: "Any data that can identify a specific individual — name, SSN, email, phone number, biometrics, IP address. Subject to privacy regulations like GDPR and state breach notification laws. Must be protected with encryption and access controls.",
+    explanation:
+      "Any data that can identify a specific individual — name, SSN, email, phone number, biometrics, IP address. Subject to privacy regulations like GDPR and state breach notification laws. Must be protected with encryption and access controls.",
     category: "Risk and Compliance",
     distractors: [
       "Protected Infrastructure Inventory",
@@ -1011,7 +1045,8 @@ export const acronyms: Acronym[] = [
   {
     acronym: "PHI",
     meaning: "Protected Health Information",
-    explanation: "Health-related data that can identify an individual — medical records, diagnoses, prescriptions, insurance info. Protected under HIPAA in the U.S. Requires strict access controls, encryption, and audit logging.",
+    explanation:
+      "Health-related data that can identify an individual — medical records, diagnoses, prescriptions, insurance info. Protected under HIPAA in the U.S. Requires strict access controls, encryption, and audit logging.",
     category: "Risk and Compliance",
     distractors: [
       "Personal Hygiene Infrastructure",
@@ -1022,7 +1057,8 @@ export const acronyms: Acronym[] = [
   {
     acronym: "GDPR",
     meaning: "General Data Protection Regulation",
-    explanation: "An EU regulation governing the collection, processing, and storage of personal data of EU residents. Requires consent, data minimization, breach notification within 72 hours, and grants individuals the right to access and delete their data.",
+    explanation:
+      "An EU regulation governing the collection, processing, and storage of personal data of EU residents. Requires consent, data minimization, breach notification within 72 hours, and grants individuals the right to access and delete their data.",
     category: "Risk and Compliance",
     distractors: [
       "Global Digital Privacy Requirements",
@@ -1033,7 +1069,8 @@ export const acronyms: Acronym[] = [
   {
     acronym: "HIPAA",
     meaning: "Health Insurance Portability and Accountability Act",
-    explanation: "A U.S. law that sets standards for protecting sensitive patient health information (PHI). Requires administrative, physical, and technical safeguards. Applies to healthcare providers, insurers, and their business associates.",
+    explanation:
+      "A U.S. law that sets standards for protecting sensitive patient health information (PHI). Requires administrative, physical, and technical safeguards. Applies to healthcare providers, insurers, and their business associates.",
     category: "Risk and Compliance",
     distractors: [
       "Healthcare Information Privacy and Access Assurance",
@@ -1044,7 +1081,8 @@ export const acronyms: Acronym[] = [
   {
     acronym: "PCI DSS",
     meaning: "Payment Card Industry Data Security Standard",
-    explanation: "A set of security requirements for any organization that handles credit card data. Mandates encryption, access controls, network segmentation, vulnerability scanning, and regular audits. Non-compliance can result in fines and loss of card processing ability.",
+    explanation:
+      "A set of security requirements for any organization that handles credit card data. Mandates encryption, access controls, network segmentation, vulnerability scanning, and regular audits. Non-compliance can result in fines and loss of card processing ability.",
     category: "Risk and Compliance",
     distractors: [
       "Private Cloud Infrastructure Data Security Specification",
@@ -1055,7 +1093,8 @@ export const acronyms: Acronym[] = [
   {
     acronym: "SOC",
     meaning: "Security Operations Center",
-    explanation: "A centralized facility where a team of analysts monitors, detects, analyzes, and responds to security incidents 24/7. Uses tools like SIEM, EDR, and threat intelligence feeds. Can be in-house or outsourced (managed SOC).",
+    explanation:
+      "A centralized facility where a team of analysts monitors, detects, analyzes, and responds to security incidents 24/7. Uses tools like SIEM, EDR, and threat intelligence feeds. Can be in-house or outsourced (managed SOC).",
     category: "Risk and Compliance",
     distractors: [
       "System Oversight Committee",
@@ -1066,7 +1105,8 @@ export const acronyms: Acronym[] = [
   {
     acronym: "NIST",
     meaning: "National Institute of Standards and Technology",
-    explanation: "A U.S. federal agency that develops cybersecurity frameworks, standards, and guidelines. The NIST Cybersecurity Framework (CSF) and SP 800 series are widely adopted for risk management and security controls, even outside the U.S.",
+    explanation:
+      "A U.S. federal agency that develops cybersecurity frameworks, standards, and guidelines. The NIST Cybersecurity Framework (CSF) and SP 800 series are widely adopted for risk management and security controls, even outside the U.S.",
     category: "Risk and Compliance",
     distractors: [
       "Network Infrastructure Security Toolkit",
@@ -1077,7 +1117,8 @@ export const acronyms: Acronym[] = [
   {
     acronym: "ISO",
     meaning: "International Organization for Standardization",
-    explanation: "An international body that publishes standards across industries. ISO 27001 is the key information security standard, providing a framework for establishing and maintaining an Information Security Management System (ISMS).",
+    explanation:
+      "An international body that publishes standards across industries. ISO 27001 is the key information security standard, providing a framework for establishing and maintaining an Information Security Management System (ISMS).",
     category: "Risk and Compliance",
     distractors: [
       "Information Security Office",
@@ -1090,7 +1131,8 @@ export const acronyms: Acronym[] = [
   {
     acronym: "SCAP",
     meaning: "Security Content Automation Protocol",
-    explanation: "A suite of NIST specifications for automating vulnerability management, security measurement, and compliance checking. Standardizes how security content (checklists, benchmarks) is expressed and exchanged across tools.",
+    explanation:
+      "A suite of NIST specifications for automating vulnerability management, security measurement, and compliance checking. Standardizes how security content (checklists, benchmarks) is expressed and exchanged across tools.",
     category: "Security Operations",
     distractors: [
       "System Configuration Audit Platform",
@@ -1101,7 +1143,8 @@ export const acronyms: Acronym[] = [
   {
     acronym: "EDR",
     meaning: "Endpoint Detection and Response",
-    explanation: "Security tools installed on endpoints (laptops, servers) that continuously monitor for suspicious behavior, provide real-time threat detection, and enable investigation and response. Goes beyond traditional antivirus with behavioral analysis.",
+    explanation:
+      "Security tools installed on endpoints (laptops, servers) that continuously monitor for suspicious behavior, provide real-time threat detection, and enable investigation and response. Goes beyond traditional antivirus with behavioral analysis.",
     category: "Security Operations",
     distractors: [
       "Encrypted Data Recovery",
@@ -1112,7 +1155,8 @@ export const acronyms: Acronym[] = [
   {
     acronym: "XDR",
     meaning: "Extended Detection and Response",
-    explanation: "Extends EDR by correlating data across multiple security layers — endpoints, network, email, cloud, and identity. Provides a unified view of threats and automates response across the entire environment rather than just endpoints.",
+    explanation:
+      "Extends EDR by correlating data across multiple security layers — endpoints, network, email, cloud, and identity. Provides a unified view of threats and automates response across the entire environment rather than just endpoints.",
     category: "Security Operations",
     distractors: [
       "External Data Recovery",
@@ -1123,7 +1167,8 @@ export const acronyms: Acronym[] = [
   {
     acronym: "MDR",
     meaning: "Managed Detection and Response",
-    explanation: "An outsourced security service where a third-party provider monitors your environment 24/7, hunts for threats, and responds to incidents on your behalf. Ideal for organizations that lack in-house security operations expertise.",
+    explanation:
+      "An outsourced security service where a third-party provider monitors your environment 24/7, hunts for threats, and responds to incidents on your behalf. Ideal for organizations that lack in-house security operations expertise.",
     category: "Security Operations",
     distractors: [
       "Mobile Device Recovery",
@@ -1134,7 +1179,8 @@ export const acronyms: Acronym[] = [
   {
     acronym: "UEBA",
     meaning: "User and Entity Behavior Analytics",
-    explanation: "Uses machine learning to establish baseline behavior for users and entities (devices, applications), then detects anomalies. Can identify insider threats, compromised accounts, and lateral movement that rule-based systems miss.",
+    explanation:
+      "Uses machine learning to establish baseline behavior for users and entities (devices, applications), then detects anomalies. Can identify insider threats, compromised accounts, and lateral movement that rule-based systems miss.",
     category: "Security Operations",
     distractors: [
       "Unified Endpoint and Baseline Assessment",
@@ -1145,7 +1191,8 @@ export const acronyms: Acronym[] = [
   {
     acronym: "FIM",
     meaning: "File Integrity Monitoring",
-    explanation: "Monitors critical system files, configuration files, and content for unauthorized changes. Creates a hash baseline and alerts when files are modified, added, or deleted. Required by PCI DSS and useful for detecting tampering.",
+    explanation:
+      "Monitors critical system files, configuration files, and content for unauthorized changes. Creates a hash baseline and alerts when files are modified, added, or deleted. Required by PCI DSS and useful for detecting tampering.",
     category: "Security Operations",
     distractors: [
       "Firewall Incident Management",
@@ -1156,7 +1203,8 @@ export const acronyms: Acronym[] = [
   {
     acronym: "GPO",
     meaning: "Group Policy Object",
-    explanation: "A feature in Windows Active Directory that allows administrators to centrally manage settings for users and computers — password policies, software installation, security settings, etc. Applied hierarchically to OUs.",
+    explanation:
+      "A feature in Windows Active Directory that allows administrators to centrally manage settings for users and computers — password policies, software installation, security settings, etc. Applied hierarchically to OUs.",
     category: "Security Operations",
     distractors: [
       "Global Permission Override",
@@ -1167,18 +1215,16 @@ export const acronyms: Acronym[] = [
   {
     acronym: "MDM",
     meaning: "Mobile Device Management",
-    explanation: "Software that allows IT to manage, secure, and enforce policies on smartphones, tablets, and laptops. Can remotely wipe devices, enforce encryption, push configurations, and control which apps can be installed.",
+    explanation:
+      "Software that allows IT to manage, secure, and enforce policies on smartphones, tablets, and laptops. Can remotely wipe devices, enforce encryption, push configurations, and control which apps can be installed.",
     category: "Security Operations",
-    distractors: [
-      "Managed Data Migration",
-      "Multi-Domain Monitoring",
-      "Master Device Manifest",
-    ],
+    distractors: ["Managed Data Migration", "Multi-Domain Monitoring", "Master Device Manifest"],
   },
   {
     acronym: "BYOD",
     meaning: "Bring Your Own Device",
-    explanation: "A policy that allows employees to use their personal devices for work purposes. Introduces security challenges around data separation, device management, and compliance. Often paired with MDM and containerization.",
+    explanation:
+      "A policy that allows employees to use their personal devices for work purposes. Introduces security challenges around data separation, device management, and compliance. Often paired with MDM and containerization.",
     category: "Security Operations",
     distractors: [
       "Baseline Your Operating Domain",
@@ -1189,7 +1235,8 @@ export const acronyms: Acronym[] = [
   {
     acronym: "COPE",
     meaning: "Corporate-Owned, Personally Enabled",
-    explanation: "A device ownership model where the organization provides the device but allows limited personal use. Gives IT more control than BYOD while still offering employees flexibility. Easier to enforce security policies.",
+    explanation:
+      "A device ownership model where the organization provides the device but allows limited personal use. Gives IT more control than BYOD while still offering employees flexibility. Easier to enforce security policies.",
     category: "Security Operations",
     distractors: [
       "Centralized Operations and Policy Enforcement",
@@ -1200,7 +1247,8 @@ export const acronyms: Acronym[] = [
   {
     acronym: "CYOD",
     meaning: "Choose Your Own Device",
-    explanation: "A model where employees select from a list of company-approved devices that the organization purchases and manages. Balances user choice with IT control — more standardized than BYOD but more flexible than a single corporate device.",
+    explanation:
+      "A model where employees select from a list of company-approved devices that the organization purchases and manages. Balances user choice with IT control — more standardized than BYOD but more flexible than a single corporate device.",
     category: "Security Operations",
     distractors: [
       "Configure Your Operating Domain",
@@ -1211,18 +1259,16 @@ export const acronyms: Acronym[] = [
   {
     acronym: "HSM",
     meaning: "Hardware Security Module",
-    explanation: "A dedicated physical device that generates, stores, and manages cryptographic keys in a tamper-resistant environment. Used to protect high-value keys for CAs, payment processing, and database encryption. Meets FIPS 140-2/3 standards.",
+    explanation:
+      "A dedicated physical device that generates, stores, and manages cryptographic keys in a tamper-resistant environment. Used to protect high-value keys for CAs, payment processing, and database encryption. Meets FIPS 140-2/3 standards.",
     category: "Security Operations",
-    distractors: [
-      "Host Session Manager",
-      "Hybrid Storage Mechanism",
-      "Hash Signing Module",
-    ],
+    distractors: ["Host Session Manager", "Hybrid Storage Mechanism", "Hash Signing Module"],
   },
   {
     acronym: "TPM",
     meaning: "Trusted Platform Module",
-    explanation: "A hardware chip on a motherboard that securely stores cryptographic keys, passwords, and certificates. Used for full-disk encryption (BitLocker), secure boot, and platform integrity verification. TPM 2.0 is required for Windows 11.",
+    explanation:
+      "A hardware chip on a motherboard that securely stores cryptographic keys, passwords, and certificates. Used for full-disk encryption (BitLocker), secure boot, and platform integrity verification. TPM 2.0 is required for Windows 11.",
     category: "Security Operations",
     distractors: [
       "Token Provisioning Manager",
@@ -1233,7 +1279,8 @@ export const acronyms: Acronym[] = [
   {
     acronym: "UEFI",
     meaning: "Unified Extensible Firmware Interface",
-    explanation: "Modern firmware that replaces legacy BIOS. Supports Secure Boot (which verifies the OS bootloader's digital signature), larger drives, faster startup, and a graphical interface. Helps prevent bootkits and rootkits that target the boot process.",
+    explanation:
+      "Modern firmware that replaces legacy BIOS. Supports Secure Boot (which verifies the OS bootloader's digital signature), larger drives, faster startup, and a graphical interface. Helps prevent bootkits and rootkits that target the boot process.",
     category: "Security Operations",
     distractors: [
       "Universal Encrypted File Integrity",
@@ -1244,7 +1291,8 @@ export const acronyms: Acronym[] = [
   {
     acronym: "SELinux",
     meaning: "Security-Enhanced Linux",
-    explanation: "A Linux kernel security module that enforces mandatory access control (MAC) policies. Developed by the NSA, it confines processes to the minimum permissions needed, limiting the damage from a compromised application or service.",
+    explanation:
+      "A Linux kernel security module that enforces mandatory access control (MAC) policies. Developed by the NSA, it confines processes to the minimum permissions needed, limiting the damage from a compromised application or service.",
     category: "Security Operations",
     distractors: [
       "System Enforcement Layer for Linux",
@@ -1257,40 +1305,32 @@ export const acronyms: Acronym[] = [
   {
     acronym: "IaaS",
     meaning: "Infrastructure as a Service",
-    explanation: "A cloud model where the provider supplies virtualized computing resources (VMs, storage, networking) and the customer manages the OS, applications, and data. Examples: AWS EC2, Azure VMs. Customer has the most control and responsibility.",
+    explanation:
+      "A cloud model where the provider supplies virtualized computing resources (VMs, storage, networking) and the customer manages the OS, applications, and data. Examples: AWS EC2, Azure VMs. Customer has the most control and responsibility.",
     category: "Cloud and Virtualization",
-    distractors: [
-      "Identity as a Service",
-      "Integration as a Standard",
-      "Isolation as a Strategy",
-    ],
+    distractors: ["Identity as a Service", "Integration as a Standard", "Isolation as a Strategy"],
   },
   {
     acronym: "PaaS",
     meaning: "Platform as a Service",
-    explanation: "A cloud model where the provider manages the infrastructure and runtime environment while the customer deploys and manages applications and data. Examples: Heroku, Azure App Service. Reduces infrastructure management burden.",
+    explanation:
+      "A cloud model where the provider manages the infrastructure and runtime environment while the customer deploys and manages applications and data. Examples: Heroku, Azure App Service. Reduces infrastructure management burden.",
     category: "Cloud and Virtualization",
-    distractors: [
-      "Protection as a Service",
-      "Provisioning as a Standard",
-      "Policy as a Service",
-    ],
+    distractors: ["Protection as a Service", "Provisioning as a Standard", "Policy as a Service"],
   },
   {
     acronym: "SaaS",
     meaning: "Software as a Service",
-    explanation: "A cloud model where the provider delivers a fully managed application over the internet. The customer only manages their data and user access. Examples: Microsoft 365, Salesforce, Gmail. Least customer responsibility for infrastructure.",
+    explanation:
+      "A cloud model where the provider delivers a fully managed application over the internet. The customer only manages their data and user access. Examples: Microsoft 365, Salesforce, Gmail. Least customer responsibility for infrastructure.",
     category: "Cloud and Virtualization",
-    distractors: [
-      "Security as a Service",
-      "Storage as a Standard",
-      "Scalability as a Service",
-    ],
+    distractors: ["Security as a Service", "Storage as a Standard", "Scalability as a Service"],
   },
   {
     acronym: "CASB",
     meaning: "Cloud Access Security Broker",
-    explanation: "A security policy enforcement point between cloud service consumers and providers. Provides visibility into cloud usage, enforces data security policies, detects shadow IT, and ensures compliance across SaaS, PaaS, and IaaS.",
+    explanation:
+      "A security policy enforcement point between cloud service consumers and providers. Provides visibility into cloud usage, enforces data security policies, detects shadow IT, and ensures compliance across SaaS, PaaS, and IaaS.",
     category: "Cloud and Virtualization",
     distractors: [
       "Certificate Authority Service Bus",
@@ -1301,18 +1341,16 @@ export const acronyms: Acronym[] = [
   {
     acronym: "SWG",
     meaning: "Secure Web Gateway",
-    explanation: "A security solution that filters unwanted software and malware from user-initiated web traffic. Enforces corporate acceptable use policies, blocks malicious sites, and inspects HTTPS traffic. Acts as a proxy between users and the internet.",
+    explanation:
+      "A security solution that filters unwanted software and malware from user-initiated web traffic. Enforces corporate acceptable use policies, blocks malicious sites, and inspects HTTPS traffic. Acts as a proxy between users and the internet.",
     category: "Cloud and Virtualization",
-    distractors: [
-      "Software Workload Guard",
-      "Standard Wireless Gateway",
-      "System-Wide Governance",
-    ],
+    distractors: ["Software Workload Guard", "Standard Wireless Gateway", "System-Wide Governance"],
   },
   {
     acronym: "SASE",
     meaning: "Secure Access Service Edge",
-    explanation: "A cloud-delivered framework that converges networking (SD-WAN) and security (CASB, SWG, ZTNA, FWaaS) into a single service. Designed for distributed workforces accessing cloud resources from anywhere, replacing traditional perimeter security.",
+    explanation:
+      "A cloud-delivered framework that converges networking (SD-WAN) and security (CASB, SWG, ZTNA, FWaaS) into a single service. Designed for distributed workforces accessing cloud resources from anywhere, replacing traditional perimeter security.",
     category: "Cloud and Virtualization",
     distractors: [
       "Software-Automated Security Environment",
@@ -1323,7 +1361,8 @@ export const acronyms: Acronym[] = [
   {
     acronym: "ZTNA",
     meaning: "Zero Trust Network Access",
-    explanation: "A security model that provides secure remote access to applications based on identity verification and device posture — not network location. Replaces traditional VPNs by granting access per-application rather than network-wide access.",
+    explanation:
+      "A security model that provides secure remote access to applications based on identity verification and device posture — not network location. Replaces traditional VPNs by granting access per-application rather than network-wide access.",
     category: "Cloud and Virtualization",
     distractors: [
       "Zone-Tiered Network Architecture",
@@ -1334,18 +1373,16 @@ export const acronyms: Acronym[] = [
   {
     acronym: "VDI",
     meaning: "Virtual Desktop Infrastructure",
-    explanation: "Hosts desktop environments on a centralized server, streamed to thin clients or other devices. Improves security by keeping data in the datacenter, simplifies patching, and enables remote work. Data never resides on the endpoint.",
+    explanation:
+      "Hosts desktop environments on a centralized server, streamed to thin clients or other devices. Improves security by keeping data in the datacenter, simplifies patching, and enables remote work. Data never resides on the endpoint.",
     category: "Cloud and Virtualization",
-    distractors: [
-      "Verified Device Identity",
-      "VLAN Data Isolation",
-      "Virtual Data Interface",
-    ],
+    distractors: ["Verified Device Identity", "VLAN Data Isolation", "Virtual Data Interface"],
   },
   {
     acronym: "SDN",
     meaning: "Software-Defined Networking",
-    explanation: "Decouples the network control plane from the data plane, allowing centralized, programmable network management. Enables dynamic security policies, microsegmentation, and rapid network changes through software rather than manual device configuration.",
+    explanation:
+      "Decouples the network control plane from the data plane, allowing centralized, programmable network management. Enables dynamic security policies, microsegmentation, and rapid network changes through software rather than manual device configuration.",
     category: "Cloud and Virtualization",
     distractors: [
       "Secure Domain Namespace",
@@ -1356,7 +1393,8 @@ export const acronyms: Acronym[] = [
   {
     acronym: "IAC",
     meaning: "Infrastructure as Code",
-    explanation: "Managing and provisioning infrastructure through machine-readable configuration files rather than manual processes. Tools like Terraform and CloudFormation enable version-controlled, repeatable, and auditable infrastructure deployments.",
+    explanation:
+      "Managing and provisioning infrastructure through machine-readable configuration files rather than manual processes. Tools like Terraform and CloudFormation enable version-controlled, repeatable, and auditable infrastructure deployments.",
     category: "Cloud and Virtualization",
     distractors: [
       "Identity and Access Certification",
@@ -1367,7 +1405,8 @@ export const acronyms: Acronym[] = [
   {
     acronym: "CSP",
     meaning: "Cloud Service Provider",
-    explanation: "A company that offers cloud computing services — infrastructure, platforms, or software — over the internet. Major CSPs include AWS, Microsoft Azure, and Google Cloud Platform. Customers share responsibility for security with the CSP.",
+    explanation:
+      "A company that offers cloud computing services — infrastructure, platforms, or software — over the internet. Major CSPs include AWS, Microsoft Azure, and Google Cloud Platform. Customers share responsibility for security with the CSP.",
     category: "Cloud and Virtualization",
     distractors: [
       "Content Security Policy",
@@ -1378,7 +1417,8 @@ export const acronyms: Acronym[] = [
   {
     acronym: "SWC",
     meaning: "Software Composition Analysis",
-    explanation: "Tools that scan applications to identify open-source components and their known vulnerabilities, license compliance issues, and outdated dependencies. Critical for supply chain security since most modern apps rely heavily on open-source libraries.",
+    explanation:
+      "Tools that scan applications to identify open-source components and their known vulnerabilities, license compliance issues, and outdated dependencies. Critical for supply chain security since most modern apps rely heavily on open-source libraries.",
     category: "Cloud and Virtualization",
     distractors: [
       "Secure Workload Container",
@@ -1391,7 +1431,8 @@ export const acronyms: Acronym[] = [
   {
     acronym: "SDLC",
     meaning: "Software Development Life Cycle",
-    explanation: "The structured process for planning, developing, testing, deploying, and maintaining software. Integrating security at each phase ('shift left') is more effective and cheaper than adding it after deployment.",
+    explanation:
+      "The structured process for planning, developing, testing, deploying, and maintaining software. Integrating security at each phase ('shift left') is more effective and cheaper than adding it after deployment.",
     category: "Application Security",
     distractors: [
       "Secure Data Logging Configuration",
@@ -1402,7 +1443,8 @@ export const acronyms: Acronym[] = [
   {
     acronym: "SAST",
     meaning: "Static Application Security Testing",
-    explanation: "Analyzes source code, bytecode, or binaries for security vulnerabilities without executing the application. Runs early in the SDLC (shift left). Finds issues like SQL injection patterns, hardcoded secrets, and buffer overflows in code.",
+    explanation:
+      "Analyzes source code, bytecode, or binaries for security vulnerabilities without executing the application. Runs early in the SDLC (shift left). Finds issues like SQL injection patterns, hardcoded secrets, and buffer overflows in code.",
     category: "Application Security",
     distractors: [
       "Secure Automated Scanning Tool",
@@ -1413,7 +1455,8 @@ export const acronyms: Acronym[] = [
   {
     acronym: "DAST",
     meaning: "Dynamic Application Security Testing",
-    explanation: "Tests a running application from the outside by sending crafted requests and analyzing responses. Simulates real attacks without access to source code. Finds runtime vulnerabilities like XSS, injection flaws, and misconfigurations.",
+    explanation:
+      "Tests a running application from the outside by sending crafted requests and analyzing responses. Simulates real attacks without access to source code. Finds runtime vulnerabilities like XSS, injection flaws, and misconfigurations.",
     category: "Application Security",
     distractors: [
       "Data Analysis and Scanning Technique",
@@ -1424,7 +1467,8 @@ export const acronyms: Acronym[] = [
   {
     acronym: "IAST",
     meaning: "Interactive Application Security Testing",
-    explanation: "Combines SAST and DAST by instrumenting the application with agents that monitor code execution in real time during testing. Provides accurate results with low false positives by correlating code-level and runtime data.",
+    explanation:
+      "Combines SAST and DAST by instrumenting the application with agents that monitor code execution in real time during testing. Provides accurate results with low false positives by correlating code-level and runtime data.",
     category: "Application Security",
     distractors: [
       "Integrated Automated Scanning Technique",
@@ -1435,7 +1479,8 @@ export const acronyms: Acronym[] = [
   {
     acronym: "RASP",
     meaning: "Runtime Application Self-Protection",
-    explanation: "Security technology embedded within an application that detects and blocks attacks in real time from inside the running app. Can see the full context of each request and protect against zero-day exploits without external tools.",
+    explanation:
+      "Security technology embedded within an application that detects and blocks attacks in real time from inside the running app. Can see the full context of each request and protect against zero-day exploits without external tools.",
     category: "Application Security",
     distractors: [
       "Remote Access Security Protocol",
@@ -1446,7 +1491,8 @@ export const acronyms: Acronym[] = [
   {
     acronym: "OWASP",
     meaning: "Open Web Application Security Project",
-    explanation: "A nonprofit community that produces freely available resources for web application security. Best known for the OWASP Top 10 — a list of the most critical web application security risks, updated periodically.",
+    explanation:
+      "A nonprofit community that produces freely available resources for web application security. Best known for the OWASP Top 10 — a list of the most critical web application security risks, updated periodically.",
     category: "Application Security",
     distractors: [
       "Online Workload and Service Protection",
@@ -1457,7 +1503,8 @@ export const acronyms: Acronym[] = [
   {
     acronym: "API",
     meaning: "Application Programming Interface",
-    explanation: "A set of defined rules and protocols that allow software applications to communicate with each other. APIs must be secured with authentication (API keys, OAuth tokens), rate limiting, input validation, and encryption.",
+    explanation:
+      "A set of defined rules and protocols that allow software applications to communicate with each other. APIs must be secured with authentication (API keys, OAuth tokens), rate limiting, input validation, and encryption.",
     category: "Application Security",
     distractors: [
       "Automated Provisioning Integration",
@@ -1468,7 +1515,8 @@ export const acronyms: Acronym[] = [
   {
     acronym: "CI/CD",
     meaning: "Continuous Integration/Continuous Delivery",
-    explanation: "DevOps practices where code changes are automatically built, tested, and prepared for release (CI) and then automatically deployed to production (CD). Security scanning (SAST, DAST, dependency checks) should be integrated into the pipeline.",
+    explanation:
+      "DevOps practices where code changes are automatically built, tested, and prepared for release (CI) and then automatically deployed to production (CD). Security scanning (SAST, DAST, dependency checks) should be integrated into the pipeline.",
     category: "Application Security",
     distractors: [
       "Credential Issuance/Certificate Distribution",
@@ -1479,7 +1527,8 @@ export const acronyms: Acronym[] = [
   {
     acronym: "SBOM",
     meaning: "Software Bill of Materials",
-    explanation: "A comprehensive inventory of all components, libraries, and dependencies in a software application. Enables organizations to quickly identify if they're affected by newly discovered vulnerabilities in third-party components (like Log4Shell).",
+    explanation:
+      "A comprehensive inventory of all components, libraries, and dependencies in a software application. Enables organizations to quickly identify if they're affected by newly discovered vulnerabilities in third-party components (like Log4Shell).",
     category: "Application Security",
     distractors: [
       "Security Baseline and Operations Manual",
@@ -1492,7 +1541,8 @@ export const acronyms: Acronym[] = [
   {
     acronym: "WPA2",
     meaning: "Wi-Fi Protected Access 2",
-    explanation: "The security standard for Wi-Fi networks since 2004. Uses AES-CCMP encryption. Personal mode uses a pre-shared key (PSK); Enterprise mode uses 802.1X with RADIUS for per-user authentication. Vulnerable to KRACK attacks.",
+    explanation:
+      "The security standard for Wi-Fi networks since 2004. Uses AES-CCMP encryption. Personal mode uses a pre-shared key (PSK); Enterprise mode uses 802.1X with RADIUS for per-user authentication. Vulnerable to KRACK attacks.",
     category: "Wireless Security",
     distractors: [
       "Wireless Privacy Architecture 2",
@@ -1503,7 +1553,8 @@ export const acronyms: Acronym[] = [
   {
     acronym: "WPA3",
     meaning: "Wi-Fi Protected Access 3",
-    explanation: "The latest Wi-Fi security standard (2018). Uses SAE (Dragonfly handshake) instead of PSK, providing forward secrecy and protection against offline dictionary attacks. Also mandates Protected Management Frames and 192-bit security for Enterprise mode.",
+    explanation:
+      "The latest Wi-Fi security standard (2018). Uses SAE (Dragonfly handshake) instead of PSK, providing forward secrecy and protection against offline dictionary attacks. Also mandates Protected Management Frames and 192-bit security for Enterprise mode.",
     category: "Wireless Security",
     distractors: [
       "Wireless Privacy Architecture 3",
@@ -1514,7 +1565,8 @@ export const acronyms: Acronym[] = [
   {
     acronym: "WPS",
     meaning: "Wi-Fi Protected Setup",
-    explanation: "A feature designed to make connecting to Wi-Fi easier via a push button or PIN. Considered a major security vulnerability because the 8-digit PIN can be brute-forced in hours. Should be disabled on all access points.",
+    explanation:
+      "A feature designed to make connecting to Wi-Fi easier via a push button or PIN. Considered a major security vulnerability because the 8-digit PIN can be brute-forced in hours. Should be disabled on all access points.",
     category: "Wireless Security",
     distractors: [
       "Wireless Provisioning Service",
@@ -1525,7 +1577,8 @@ export const acronyms: Acronym[] = [
   {
     acronym: "SSID",
     meaning: "Service Set Identifier",
-    explanation: "The name of a wireless network that users see when scanning for Wi-Fi. Can be broadcast or hidden (though hiding provides no real security). Each wireless network has a unique SSID that clients use to connect.",
+    explanation:
+      "The name of a wireless network that users see when scanning for Wi-Fi. Can be broadcast or hidden (though hiding provides no real security). Each wireless network has a unique SSID that clients use to connect.",
     category: "Wireless Security",
     distractors: [
       "Secure Session Identity Descriptor",
@@ -1536,7 +1589,8 @@ export const acronyms: Acronym[] = [
   {
     acronym: "BSSID",
     meaning: "Basic Service Set Identifier",
-    explanation: "The MAC address of a wireless access point. Unlike the SSID (network name), the BSSID uniquely identifies a specific access point. Used in wireless analysis and rogue AP detection to distinguish between access points with the same SSID.",
+    explanation:
+      "The MAC address of a wireless access point. Unlike the SSID (network name), the BSSID uniquely identifies a specific access point. Used in wireless analysis and rogue AP detection to distinguish between access points with the same SSID.",
     category: "Wireless Security",
     distractors: [
       "Broadcast Signal Security Identity Descriptor",
@@ -1547,7 +1601,8 @@ export const acronyms: Acronym[] = [
   {
     acronym: "TKIP",
     meaning: "Temporal Key Integrity Protocol",
-    explanation: "An encryption protocol used in WPA (first generation) as an interim upgrade from WEP. Generates a new key for each packet but still uses the weak RC4 cipher underneath. Deprecated — WPA2 replaced it with the stronger AES-CCMP.",
+    explanation:
+      "An encryption protocol used in WPA (first generation) as an interim upgrade from WEP. Generates a new key for each packet but still uses the weak RC4 cipher underneath. Deprecated — WPA2 replaced it with the stronger AES-CCMP.",
     category: "Wireless Security",
     distractors: [
       "Transport Key Interchange Protocol",
@@ -1558,7 +1613,8 @@ export const acronyms: Acronym[] = [
   {
     acronym: "CCMP",
     meaning: "Counter Mode with Cipher Block Chaining Message Authentication Code Protocol",
-    explanation: "The mandatory encryption protocol for WPA2. Based on AES encryption, it provides both data confidentiality and integrity. Significantly stronger than TKIP and is the recommended encryption mode for modern Wi-Fi networks.",
+    explanation:
+      "The mandatory encryption protocol for WPA2. Based on AES encryption, it provides both data confidentiality and integrity. Significantly stronger than TKIP and is the recommended encryption mode for modern Wi-Fi networks.",
     category: "Wireless Security",
     distractors: [
       "Centralized Certificate Management Protocol",
@@ -1569,7 +1625,8 @@ export const acronyms: Acronym[] = [
   {
     acronym: "SAE",
     meaning: "Simultaneous Authentication of Equals",
-    explanation: "The key exchange mechanism used in WPA3-Personal (also called Dragonfly handshake). Both parties prove knowledge of the password without transmitting it. Provides forward secrecy and resists offline dictionary attacks even if the password is weak.",
+    explanation:
+      "The key exchange mechanism used in WPA3-Personal (also called Dragonfly handshake). Both parties prove knowledge of the password without transmitting it. Provides forward secrecy and resists offline dictionary attacks even if the password is weak.",
     category: "Wireless Security",
     distractors: [
       "Secure Association Establishment",
@@ -1582,7 +1639,8 @@ export const acronyms: Acronym[] = [
   {
     acronym: "TOTP",
     meaning: "Time-Based One-Time Password",
-    explanation: "Generates a short-lived numeric code based on a shared secret and the current time (typically 30-second intervals). Used in authenticator apps like Google Authenticator. The code changes every interval, preventing replay attacks.",
+    explanation:
+      "Generates a short-lived numeric code based on a shared secret and the current time (typically 30-second intervals). Used in authenticator apps like Google Authenticator. The code changes every interval, preventing replay attacks.",
     category: "Identity and Access",
     distractors: [
       "Token-Originated Trusted Protocol",
@@ -1593,7 +1651,8 @@ export const acronyms: Acronym[] = [
   {
     acronym: "HOTP",
     meaning: "HMAC-Based One-Time Password",
-    explanation: "Generates a one-time password based on a shared secret and an incrementing counter (not time). The code remains valid until used. Used in hardware tokens. Less secure than TOTP since unused codes don't expire.",
+    explanation:
+      "Generates a one-time password based on a shared secret and an incrementing counter (not time). The code remains valid until used. Used in hardware tokens. Less secure than TOTP since unused codes don't expire.",
     category: "Identity and Access",
     distractors: [
       "Hash-Originated Trusted Protocol",
@@ -1604,7 +1663,8 @@ export const acronyms: Acronym[] = [
   {
     acronym: "FIDO2",
     meaning: "Fast Identity Online 2",
-    explanation: "A passwordless authentication standard that uses public-key cryptography. The private key stays on the user's device (security key, phone, laptop). Supports biometrics and PINs. Resistant to phishing, replay, and MITM attacks.",
+    explanation:
+      "A passwordless authentication standard that uses public-key cryptography. The private key stays on the user's device (security key, phone, laptop). Supports biometrics and PINs. Resistant to phishing, replay, and MITM attacks.",
     category: "Identity and Access",
     distractors: [
       "Federated Identity and Device Onboarding 2",
@@ -1615,7 +1675,8 @@ export const acronyms: Acronym[] = [
   {
     acronym: "CAC",
     meaning: "Common Access Card",
-    explanation: "A smart card issued to U.S. Department of Defense personnel for physical access to buildings and logical access to systems. Contains a certificate, photo, and digital credentials. Used with a PIN for two-factor authentication.",
+    explanation:
+      "A smart card issued to U.S. Department of Defense personnel for physical access to buildings and logical access to systems. Contains a certificate, photo, and digital credentials. Used with a PIN for two-factor authentication.",
     category: "Identity and Access",
     distractors: [
       "Certificate Authority Chain",
@@ -1626,7 +1687,8 @@ export const acronyms: Acronym[] = [
   {
     acronym: "PIV",
     meaning: "Personal Identity Verification",
-    explanation: "A smart card credential standard mandated by FIPS 201 for U.S. federal employees and contractors. Similar to CAC but for civilian agencies. Provides identity verification for both physical and logical access to government systems.",
+    explanation:
+      "A smart card credential standard mandated by FIPS 201 for U.S. federal employees and contractors. Similar to CAC but for civilian agencies. Provides identity verification for both physical and logical access to government systems.",
     category: "Identity and Access",
     distractors: [
       "Protected Infrastructure Validation",
@@ -1637,7 +1699,8 @@ export const acronyms: Acronym[] = [
   {
     acronym: "IdP",
     meaning: "Identity Provider",
-    explanation: "A service that creates, stores, and manages digital identities and authenticates users on behalf of other applications. Examples: Azure AD, Okta, Google Workspace. Enables SSO by issuing tokens (SAML assertions, OIDC tokens) to service providers.",
+    explanation:
+      "A service that creates, stores, and manages digital identities and authenticates users on behalf of other applications. Examples: Azure AD, Okta, Google Workspace. Enables SSO by issuing tokens (SAML assertions, OIDC tokens) to service providers.",
     category: "Identity and Access",
     distractors: [
       "Integrated Defense Platform",
@@ -1650,18 +1713,16 @@ export const acronyms: Acronym[] = [
   {
     acronym: "IR",
     meaning: "Incident Response",
-    explanation: "The organized approach to detecting, containing, eradicating, and recovering from security incidents. Follows phases: preparation, detection/analysis, containment/eradication/recovery, and post-incident lessons learned.",
+    explanation:
+      "The organized approach to detecting, containing, eradicating, and recovering from security incidents. Follows phases: preparation, detection/analysis, containment/eradication/recovery, and post-incident lessons learned.",
     category: "Forensics",
-    distractors: [
-      "Information Recovery",
-      "Identity Resolution",
-      "Integrity Review",
-    ],
+    distractors: ["Information Recovery", "Identity Resolution", "Integrity Review"],
   },
   {
     acronym: "CSIRT",
     meaning: "Computer Security Incident Response Team",
-    explanation: "A dedicated team responsible for receiving, reviewing, and responding to computer security incidents. May be internal to an organization or serve a broader community (like a national CSIRT). Coordinates containment, investigation, and recovery.",
+    explanation:
+      "A dedicated team responsible for receiving, reviewing, and responding to computer security incidents. May be internal to an organization or serve a broader community (like a national CSIRT). Coordinates containment, investigation, and recovery.",
     category: "Forensics",
     distractors: [
       "Centralized Security Intelligence and Reporting Team",
@@ -1672,18 +1733,16 @@ export const acronyms: Acronym[] = [
   {
     acronym: "CoC",
     meaning: "Chain of Custody",
-    explanation: "A documented record of who handled evidence, when, and what they did with it. Critical in digital forensics to ensure evidence is admissible in court. Any break in the chain can render evidence inadmissible.",
+    explanation:
+      "A documented record of who handled evidence, when, and what they did with it. Critical in digital forensics to ensure evidence is admissible in court. Any break in the chain can render evidence inadmissible.",
     category: "Forensics",
-    distractors: [
-      "Certificate of Compliance",
-      "Code of Conduct",
-      "Continuity of Control",
-    ],
+    distractors: ["Certificate of Compliance", "Code of Conduct", "Continuity of Control"],
   },
   {
     acronym: "DFIR",
     meaning: "Digital Forensics and Incident Response",
-    explanation: "The combined discipline of investigating digital evidence (forensics) and managing security incidents (IR). DFIR teams analyze disk images, memory dumps, logs, and network captures to determine what happened and how to prevent recurrence.",
+    explanation:
+      "The combined discipline of investigating digital evidence (forensics) and managing security incidents (IR). DFIR teams analyze disk images, memory dumps, logs, and network captures to determine what happened and how to prevent recurrence.",
     category: "Forensics",
     distractors: [
       "Data Fault Identification and Recovery",
@@ -1694,7 +1753,8 @@ export const acronyms: Acronym[] = [
   {
     acronym: "IOA",
     meaning: "Indicator of Attack",
-    explanation: "Proactive signals that an attack is currently in progress — such as unusual process execution, lateral movement, or privilege escalation attempts. Unlike IoCs (which indicate a breach already happened), IOAs focus on detecting active attacker behavior.",
+    explanation:
+      "Proactive signals that an attack is currently in progress — such as unusual process execution, lateral movement, or privilege escalation attempts. Unlike IoCs (which indicate a breach already happened), IOAs focus on detecting active attacker behavior.",
     category: "Forensics",
     distractors: [
       "Integrity of Authentication",
@@ -1707,7 +1767,8 @@ export const acronyms: Acronym[] = [
   {
     acronym: "OSINT",
     meaning: "Open-Source Intelligence",
-    explanation: "Intelligence gathered from publicly available sources — social media, websites, public records, DNS records, job postings, etc. The first phase of reconnaissance in penetration testing. Also used by threat intelligence teams to track adversaries.",
+    explanation:
+      "Intelligence gathered from publicly available sources — social media, websites, public records, DNS records, job postings, etc. The first phase of reconnaissance in penetration testing. Also used by threat intelligence teams to track adversaries.",
     category: "Penetration Testing",
     distractors: [
       "Operating System Integration",
@@ -1718,7 +1779,8 @@ export const acronyms: Acronym[] = [
   {
     acronym: "PTES",
     meaning: "Penetration Testing Execution Standard",
-    explanation: "A framework that defines the phases of a penetration test: pre-engagement, intelligence gathering, threat modeling, vulnerability analysis, exploitation, post-exploitation, and reporting. Provides a consistent methodology for pentesters.",
+    explanation:
+      "A framework that defines the phases of a penetration test: pre-engagement, intelligence gathering, threat modeling, vulnerability analysis, exploitation, post-exploitation, and reporting. Provides a consistent methodology for pentesters.",
     category: "Penetration Testing",
     distractors: [
       "Protocol Testing and Evaluation Suite",
@@ -1729,29 +1791,24 @@ export const acronyms: Acronym[] = [
   {
     acronym: "ROE",
     meaning: "Rules of Engagement",
-    explanation: "A document agreed upon before a penetration test that defines the scope, boundaries, and constraints. Specifies which systems can be tested, allowed attack types, testing hours, emergency contacts, and what's explicitly off-limits.",
+    explanation:
+      "A document agreed upon before a penetration test that defines the scope, boundaries, and constraints. Specifies which systems can be tested, allowed attack types, testing hours, emergency contacts, and what's explicitly off-limits.",
     category: "Penetration Testing",
-    distractors: [
-      "Record of Evidence",
-      "Risk of Exposure",
-      "Response and Outcome Evaluation",
-    ],
+    distractors: ["Record of Evidence", "Risk of Exposure", "Response and Outcome Evaluation"],
   },
   {
     acronym: "C2",
     meaning: "Command and Control",
-    explanation: "The infrastructure and communication channels an attacker uses to maintain control over compromised systems. C2 servers send commands to malware on victim machines and receive exfiltrated data. Pentesters simulate C2 to test detection capabilities.",
+    explanation:
+      "The infrastructure and communication channels an attacker uses to maintain control over compromised systems. C2 servers send commands to malware on victim machines and receive exfiltrated data. Pentesters simulate C2 to test detection capabilities.",
     category: "Penetration Testing",
-    distractors: [
-      "Certificate Level 2",
-      "Compliance and Containment",
-      "Credential Chaining",
-    ],
+    distractors: ["Certificate Level 2", "Compliance and Containment", "Credential Chaining"],
   },
   {
     acronym: "RCE",
     meaning: "Remote Code Execution",
-    explanation: "A vulnerability that allows an attacker to run arbitrary code on a target system remotely. Among the most critical vulnerability types — can lead to full system compromise. Examples include Log4Shell (CVE-2021-44228) and EternalBlue.",
+    explanation:
+      "A vulnerability that allows an attacker to run arbitrary code on a target system remotely. Among the most critical vulnerability types — can lead to full system compromise. Examples include Log4Shell (CVE-2021-44228) and EternalBlue.",
     category: "Penetration Testing",
     distractors: [
       "Root Certificate Enrollment",

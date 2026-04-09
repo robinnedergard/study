@@ -1,13 +1,13 @@
 import { useEffect, useState } from "react";
 import { useSearchParams, useNavigate } from "react-router-dom";
-import type { Question, MissedItem } from "../types";
+import type { TermMatchQuestion, MissedItem } from "../types";
 import { authFetch } from "../auth";
-import QuestionCard from "../components/QuestionCard";
+import TermMatchCard from "../components/TermMatchCard";
 
-export default function Quiz() {
+export default function TermMatch() {
   const [searchParams] = useSearchParams();
   const navigate = useNavigate();
-  const [questions, setQuestions] = useState<Question[]>([]);
+  const [questions, setQuestions] = useState<TermMatchQuestion[]>([]);
   const [current, setCurrent] = useState(0);
   const [correctCount, setCorrectCount] = useState(0);
   const [missed, setMissed] = useState<MissedItem[]>([]);
@@ -17,7 +17,7 @@ export default function Quiz() {
   const category = searchParams.get("category") || "all";
 
   useEffect(() => {
-    authFetch(`/api/quiz?count=${count}&category=${encodeURIComponent(category)}`)
+    authFetch(`/api/quiz?mode=term-match&count=${count}&category=${encodeURIComponent(category)}`)
       .then((r) => r.json())
       .then((data) => {
         setQuestions(data);
@@ -34,8 +34,8 @@ export default function Quiz() {
       setMissed((m) => [
         ...m,
         {
-          acronym: q.acronym,
-          correctAnswer: q.correctAnswer,
+          acronym: q.correctAcronym,
+          correctAnswer: q.correctMeaning,
           explanation: q.explanation,
         },
       ]);
@@ -49,8 +49,8 @@ export default function Quiz() {
         : [
             ...missed,
             {
-              acronym: q.acronym,
-              correctAnswer: q.correctAnswer,
+              acronym: q.correctAcronym,
+              correctAnswer: q.correctMeaning,
               explanation: q.explanation,
             },
           ];
@@ -84,7 +84,7 @@ export default function Quiz() {
   }
 
   return (
-    <QuestionCard
+    <TermMatchCard
       key={current}
       question={questions[current]}
       current={current}

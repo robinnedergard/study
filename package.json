@@ -5,7 +5,7 @@
   "type": "module",
   "main": "index.js",
   "scripts": {
-    "dev": "concurrently \"tsx src/server.ts\" \"cd client && npm run dev\"",
+    "dev": "concurrently \"tsx --env-file=.env src/server.ts\" \"cd client && npm run dev\"",
     "build": "tsc && cd client && npm run build",
     "start": "node dist/server.js"
   },
@@ -19,6 +19,7 @@
     "@types/express": "^5.0.6",
     "@types/node": "^25.5.0",
     "concurrently": "^9.2.1",
+    "prettier": "^3.8.1",
     "tsx": "^4.21.0",
     "typescript": "^6.0.2"
   }
